@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  layout "standard"
+  @appName = "SeedBust"
   def home
   end
 

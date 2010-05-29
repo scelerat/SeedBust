@@ -1,5 +1,5 @@
 class SeedsController < ApplicationController
-  def show,
+  def show
   end
 
   def plant
