@@ -109,3 +109,106 @@ Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
 Processing UsersController#home (for 127.0.0.1 at 2010-05-29 15:46:09) [GET]
 Rendering users/home
 Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (63.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (350.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (508.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 16:31:46) [GET]
+
+ActionController::RoutingError (No route matches "/facebook" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#facebook (for 127.0.0.1 at 2010-05-29 16:31:56) [GET]
+Redirected to http://0.0.0.0:3000/oauth/start
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/facebook]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OauthController#start (for 127.0.0.1 at 2010-05-29 16:31:56) [GET]
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=127888450571332&type=web_server&redirect_uri=http%3A%2F%2F0.0.0.0%3A3000%2Foauth%2Fcallback
+Completed in 206ms (DB: 0) | 302 Found [http://0.0.0.0/oauth/start]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 16:35:23) [GET]
+  Parameters: {"next"=>"/"}
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 16:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/facebook" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#facebook (for 127.0.0.1 at 2010-05-29 16:35:34) [GET]
+Redirected to http://seedbust.local/oauth/start
+Completed in 2ms (DB: 0) | 302 Found [http://seedbust.local/users/facebook]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OauthController#start (for 127.0.0.1 at 2010-05-29 16:35:34) [GET]
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=127888450571332&type=web_server&redirect_uri=http%3A%2F%2Fseedbust.local%2Foauth%2Fcallback
+Completed in 274ms (DB: 0) | 302 Found [http://seedbust.local/oauth/start]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OauthController#callback (for 127.0.0.1 at 2010-05-29 16:35:34) [GET]
+  Parameters: {"code"=>"2.3WuMB1qpkduEFoeRaiwVAA__.3600.1275181200-679665385|EmG0cWN4XcLGCIgc3Fr0c_UIGvM."}
+Completed in 1123ms (View: 1, DB: 0) | 200 OK [http://seedbust.local/oauth/callback?code=2.3WuMB1qpkduEFoeRaiwVAA__.3600.1275181200-679665385%7CEmG0cWN4XcLGCIgc3Fr0c_UIGvM.]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 16:41:14) [GET]
+
+ActionController::RoutingError (No route matches "/user/facebook" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#facebook (for 127.0.0.1 at 2010-05-29 16:41:18) [GET]
+Redirected to http://seedbust.local/oauth/start
+Completed in 2ms (DB: 0) | 302 Found [http://seedbust.local/users/facebook]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OauthController#start (for 127.0.0.1 at 2010-05-29 16:41:18) [GET]
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=127888450571332&type=web_server&redirect_uri=http%3A%2F%2Fseedbust.local%2Foauth%2Fcallback
+Completed in 2ms (DB: 0) | 302 Found [http://seedbust.local/oauth/start]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OauthController#callback (for 127.0.0.1 at 2010-05-29 16:41:19) [GET]
+  Parameters: {"code"=>"2.3WuMB1qpkduEFoeRaiwVAA__.3600.1275181200-679665385|EmG0cWN4XcLGCIgc3Fr0c_UIGvM."}
+Completed in 1784ms (View: 26, DB: 0) | 200 OK [http://seedbust.local/oauth/callback?code=2.3WuMB1qpkduEFoeRaiwVAA__.3600.1275181200-679665385%7CEmG0cWN4XcLGCIgc3Fr0c_UIGvM.]

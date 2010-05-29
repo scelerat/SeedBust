@@ -15,3 +15,7 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+FACEBOOK_APPLICATION_ID   = '127888450571332'
+FACEBOOK_API_KEY          = 'fb61f1f46dd3f5224e4b93ce50e3a1b5'
+FACEBOOK_SECRET           = 'b2eb443b293f7fd3c93169c037acae07'

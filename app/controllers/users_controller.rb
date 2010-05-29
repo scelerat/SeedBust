@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
 
   def facebook
+    redirect_to oauth_authorize_path
   end
 
   def profile
