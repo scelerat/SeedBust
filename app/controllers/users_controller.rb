@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  def home,
+  def home
   end
 
-  def facebook,
+  def facebook
   end
 
   def profile
