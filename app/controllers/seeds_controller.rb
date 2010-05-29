@@ -8,5 +8,4 @@ class SeedsController < ApplicationController
   def done
     
   end 
-
 end

@@ -460,3 +460,262 @@ Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/seeds/done]
 Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 16:07:01) [GET]
 Rendering plants/edit
 Completed in 39ms (View: 37, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 16:10:54) [GET]
+Rendering plants/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:10:57) [GET]
+Rendering plants/share
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:16:07) [GET]
+Rendering plants/share
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:16:24) [GET]
+Rendering plants/share
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:16:29) [GET]
+Rendering plants/share
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:16:37) [GET]
+Rendering plants/share
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:17:26) [GET]
+Rendering plants/share
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:17:29) [GET]
+Rendering plants/share
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:17:30) [GET]
+Rendering plants/share
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#share (for 127.0.0.1 at 2010-05-29 16:17:53) [GET]
+Rendering plants/share
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/share]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:17:54) [GET]
+Rendering plants/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:21:52) [GET]
+Rendering plants/show
+Completed in 28ms (View: 27, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:22:00) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:22:44) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:23:10) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:23:23) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:23:34) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 16:23:35) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#facebook (for 127.0.0.1 at 2010-05-29 16:23:42) [GET]
+Rendering template within layouts/standard
+Rendering users/facebook
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/users/facebook]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 16:23:45) [GET]
+Rendering seeds/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 16:23:56) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 16:23:58) [GET]
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#done (for 127.0.0.1 at 2010-05-29 16:23:59) [GET]
+Rendering template within layouts/standard
+Rendering seeds/done
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/done]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 16:24:00) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#facebook (for 127.0.0.1 at 2010-05-29 16:24:01) [GET]
+Rendering template within layouts/standard
+Rendering plants/facebook
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/plants/facebook]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:24:05) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#facebook (for 127.0.0.1 at 2010-05-29 16:25:28) [GET]
+Rendering template within layouts/standard
+Rendering plants/facebook
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/facebook]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:25:30) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:27:20) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#gift (for 127.0.0.1 at 2010-05-29 16:27:22) [GET]
+Rendering template within layouts/standard
+Rendering plants/gift
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/gift]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 16:27:36) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#gift (for 127.0.0.1 at 2010-05-29 16:27:37) [GET]
+Rendering template within layouts/standard
+Rendering plants/gift
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/gift]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#gift (for 127.0.0.1 at 2010-05-29 16:29:40) [GET]
+Rendering template within layouts/standard
+Rendering plants/gift
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/gift]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 16:29:42) [GET]
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/thanks]

@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  
+  layout 'standard'
   def home
   end
 
