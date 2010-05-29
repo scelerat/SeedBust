@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  layout "standard"
-  @appName = "SeedBust"
   def home
   end
 
@@ -9,5 +7,4 @@ class UsersController < ApplicationController
 
   def profile
   end
-
 end

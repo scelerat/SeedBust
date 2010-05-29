@@ -5,4 +5,8 @@ class SeedsController < ApplicationController
   def plant
   end
 
+  def done
+    
+  end 
+
 end
