@@ -13,8 +13,14 @@ class PlantsController < ApplicationController
 
   def share
   end
+  
+  def facebook
+  end
 
   def gift
+  end
+  
+  def thanks
   end
 
 end

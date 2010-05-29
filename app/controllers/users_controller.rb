@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  
+  layout 'standard'
   def home
   end
 
@@ -8,5 +10,4 @@ class UsersController < ApplicationController
 
   def profile
   end
-
 end
