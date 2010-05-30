@@ -41,6 +41,10 @@ class PlantsController < ApplicationController
   end
   
   def foursquare
+    require 'oauth'
+    require 'foursquare'
+    oauth = session[:oauth]
+    foursquare = Foursquare::Base.new(oauth)
   end
 
   def gift
