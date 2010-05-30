@@ -7,11 +7,9 @@ class UsersController < ApplicationController
   
   layout 'standard'
   def home
-      @user = User.new()
-      @user.fb_first_name = "Frank"
-      @user.fb_last_name = "Williams"
-      @user.save
-      session[:user] = @user
+      if not current_user then
+        redirect_to :controller => :oauth, :action => :start
+      end
   end
 
   def facebook

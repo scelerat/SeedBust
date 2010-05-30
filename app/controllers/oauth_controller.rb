@@ -1,5 +1,7 @@
 class OauthController < ApplicationController
   def start
+    require 'oauth'
+    require 'foursquare'
     # redirect_to client.web_server.authorize_url(
     #   :redirect_uri => oauth_callback_url
     # )
@@ -71,12 +73,17 @@ class OauthController < ApplicationController
     foursquare = Foursquare::Base.new(oauth)
     
     # find the user from the foursquare data
+    user = User.find_by_foursquare_id(foursquare.user["id"])
+    if user.nil? then
+      user = User.new
+      user.foursquare_id          = foursquare.user["id"]
+      user.save
+    end
     
     
-    
-    session[:user] = 'foo'
+    session[:user_id] = user.id
+    session[:userdata] = foursquare.user
     session[:access_token] = @access_token
-    session[:foursquare] = foursquare
     
     redirect_to :controller => :users, :action => :home
     # render :json => user_json
