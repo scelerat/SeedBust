@@ -8,13 +8,19 @@
     <%= stylesheet_link_tag('seedbust')%>
   </head>
 
-  <body>
+<body>
     <% if flash[:notice] %>
       <div id='notice'>
         <%= flash[:notice] %>
       </div>
     <% end %>
     <%= yield %>
-  </div>
+
+<% if access_token %>
+<div>
+<%= access_token %>
+</div>
+<% end %>
+
 </body>
 </html>
