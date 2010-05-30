@@ -26,7 +26,7 @@ class SeedsController < ApplicationController
   end
   
   def position
-    session[:seed_id] = params[:id]
+    #session[:seed_id] = params[:id]
     @seed = Type.find_by_id(params[:id])
   end
   

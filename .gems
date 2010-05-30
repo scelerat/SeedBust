@@ -5,3 +5,5 @@ thoughtbot-paperclip --version 2.3.1 --source http://gems.github.com
 oauth2
 oauth
 twiliolib
+hashie
+foursquare
