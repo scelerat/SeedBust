@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       @user = User.new()
       @user.fb_first_name = "Frank"
       @user.fb_last_name = "Williams"
+      @user.save
       session[:user] = @user
   end
 
