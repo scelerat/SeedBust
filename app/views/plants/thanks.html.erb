@@ -16,7 +16,7 @@
      <% usr = User.find_by_id(leader["origin_user_id"]) %>
       <% if usr %>
        <tr class="leader">
-         <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") %></td>
+         <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") if usr.photo %></td>
          <td class="leader-name"><%= usr.fb_first_name %> <%= usr.fb_last_name %></td>
           <td class="leader-count"></td>
       <% end %>
