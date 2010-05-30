@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100530125528) do
+ActiveRecord::Schema.define(:version => 20100530201931) do
 
   create_table "plants", :force => true do |t|
     t.integer  "parent_plant_id"
@@ -19,11 +19,11 @@ ActiveRecord::Schema.define(:version => 20100530125528) do
     t.string   "state"
     t.integer  "plant_id"
     t.date     "date_planted"
-    t.integer  "lat",             :default => 0
-    t.integer  "lon",             :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "type_id"
+    t.float    "lat"
+    t.float    "lon"
   end
 
   create_table "sessions", :force => true do |t|
