@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   
   def foursquare
     if current_user 
-      redirect_to "/seeds/show/" + current_user.id
+      redirect_to "/seeds/show/#{current_user.id}"
     end
   end
 
