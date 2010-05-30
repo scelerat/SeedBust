@@ -25,12 +25,12 @@ class PlantsController < ApplicationController
       '"caption":"I+just+planted+a+seed+named+'+ params[:name] +'",'+
       '"description":"Take+a+seed+and+plant+it+to+show+your+support.",'+
       '"href":"http%3A%2F%2F' + server + '",' +
-  '"media":[{"type":"image","src":"http%3A%2F%2Fimg363.imageshack.us%2Fimg363%2F9931%2F9122plantcartoonls8.jpg","href":"http%3A%2F%2F' + server + '"}]}'+
+  '"media":[{"type":"image","src":"http://seedbust.heroku.com/images/maple.jpg","href":"http%3A%2F%2F' + server + '"}]}'+
       '&preview=1'+
       '&user_message_prompt=Tell+the+world+about+your+plant!'+
       '&callback=http%3A%2F%2F' + server + 'plants/show'+
       '&cancel=http%3A%2F%2F' + server + 'plants/show'+
-      '&action_links=[{%22text%22%3A%22Get+My+Seed%22%2C%22href%22%3A%22http%3A%2F%2F174.143.153.39%2Fseedbust%2Findex.html&display=wap&r70f6588d'
+      '&action_links=[{%22text%22%3A%22Get+My+Seed%22%2C%22href%22%3A%22http%3A%2F%2F'+ server +'&display=wap&r70f6588d'
       redirect_to url
     else
       redirect_to :action => :show
