@@ -14,7 +14,7 @@ class PlantsController < ApplicationController
   def share
   end
   
-  def facebook
+  def foursquare
   end
 
   def gift

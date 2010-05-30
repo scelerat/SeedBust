@@ -1,3 +1,39 @@
-<h1>Seeds</h1>
-<p>Your Seed is ready to plant</p>
+
+  
+  <script type="text/javascript">
+  function getPosition() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      error('not supported');
+    }
+  }
+  function success(position) {
+    window.location = "plant?lat="+position.coords.latitude+"&long="+position.coords.longitude;
+  }
+  function error(msg) {
+    alert("Sorry, we need your location, and we can't find it.");
+  }
+  </script>
+    
+    <div class="title">
+    Choose a seed to plant!
+    </div>
+    <center style="padding: 15px;">
+      <table><tr>
+        <% count = 0 %>
+      <% @seeds.each do |seed| %>
+        <% count = count + 1 %>
+        <td><%= link_to(image_tag(seed.image, :style => "border:0px"), {:action => :plant, :id => seed.id} ) %></td>
+        <% if count == 2 then %></tr><tr><% end %>
+      <% end %>
+      </tr></table>
+     </center>
+    <a href="#" onclick="getPosition()" style=""class="button">
+    Next
+    </a>
+    
+    
+  </body>
+</html>
 <p><%= link_to "Plant!", :action => :plant %></p>

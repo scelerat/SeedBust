@@ -1,0 +1,48 @@
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $('.friends').css('height', window.innerHeight-70);
+      $('.friend').toggle(function(){
+        $(this).addClass('selected');
+      }, function() {
+        $(this).addClass('selected');
+      });
+      
+    });
+    
+    function submit() {
+      var friend_ids = '';
+      $('.friend').map(function() {
+        if ($(this).hasClass("selected")) {
+          friend_ids = friend_ids + $(this).attr('fsid')+ ',';
+        }
+      });
+      window.location = 'done.html?friend_ids='+friend_ids;
+    }
+  </script>
+  <title></title>
+  </head>
+  <body>
+    <div class="friends">    
+    <div class="title">
+    Choose friends to send seeds to
+    </div>
+
+      <div fsid="3487634" class="friend">Tom Jones</div>
+      <div fsid="3487634" class="friend">Tom Jones</div>
+      <div fsid="3487634" class="friend">Tom Jones</div>
+      <div fsid="3487634" class="friend">Tom Jones</div>
+
+    </div>
+    <div class="bottom">
+    <a onclick="submit()" style="display:inline-block;" href="#" style="margin-top:25px;"class="button">
+    Send Seeds to Friends
+    </a>
+
+      <a style="display:inline-block;background-color:#ccc;" href="done.html" style="margin-top:25px;"class="button">
+      Skip
+      </a>    
+    </div>
+<p><%= link_to "Friend Share", :action => :show %></p>
+
