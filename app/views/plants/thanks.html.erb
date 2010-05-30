@@ -10,22 +10,17 @@
     Top Teams
     </div>  
     <center>
-    <table class="leaderboard">
-      <tr class="leader">
-        <td class="leader-image"><img src="http://seedbust.heroku.com/images/maple.jpg"></td>
-        <td class="leader-name">Team Alpha</td>
-        <td class="leader-count">10,283</td>
-      </tr>
-            <tr class="leader">
-        <td class="leader-image"><img src="http://seedbust.heroku.com/images/maple.jpg"></td>
-        <td class="leader-name">Gavin Newsom for Governor</td>
-        <td class="leader-count">8,374</td>
-      </tr>
-            <tr class="leader">
-        <td class="leader-image"><img src="http://seedbust.heroku.com/images/maple.jpg"></td>
-        <td class="leader-name">Doing Stuff</td>
-        <td class="leader-count">4,354</td>
-      </tr>
+    <table class="leaderboard">  
+    <% leaders = Plant.leaders 
+     leaders.each do |leader| %>
+     <% usr = User.find_by_id(leader["origin_user_id"]) %>
+      <% if usr %>
+       <tr class="leader">
+         <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") %></td>
+         <td class="leader-name"><%= usr.fb_first_name %> <%= usr.fb_last_name %></td>
+          <td class="leader-count"></td>
+      <% end %>
+     <% end %>
     </table>
     </center>
 <%= link_to("Home", "/")%>

@@ -79,6 +79,9 @@ class OauthController < ApplicationController
     if user.nil? then
       user = User.new
       user.foursquare_id          = foursquare.user["id"]
+      user.photo                  = foursquare.user["photo"]
+      user.fb_first_name              = foursquare.user["firstname"]
+      user.fb_last_name               = foursquare.user["lastname"]
       user.save
     end
     
@@ -87,6 +90,8 @@ class OauthController < ApplicationController
     session[:userdata] = foursquare.user
     session[:access_token] = @access_token
     session[:access_secret] = @access_secret
+    #logger.debug foursquare.user["photo"]
+    #logger.debug foursquare.user["firstname"]  
     
     redirect_to :controller => :users, :action => :home
     # render :json => user_json

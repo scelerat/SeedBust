@@ -4,6 +4,6 @@
     </div>
     <div class="text">
     SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.<br>
-    Welcome <%= session[:userdata]['firstname'] %>
+    Welcome <%= session[:userdata]['firstname'] %><br/><%= image_tag(session[:userdata]['photo'], :options => {:width=>'50'}) %>
     </div>    
     <%= link_to "Plant Seed", {:action => :foursquare, :id => current_user.id}, {:class => 'button', :style => 'margin-top:25px'} %>

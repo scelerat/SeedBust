@@ -30,7 +30,8 @@
     </div>
     <form action="/plants/foursqaure">
       <% @friends.each do |friend| %>
-      <div fsid="<%= friend["phone"] %>" class="friend"><%= friend["firstname"] %> <%= friend["lastname"] %></div>
+      <div fsid="4157608666" class="friend"><%= current_user.fb_first_name %></div>
+      <div fsid="<%= friend["phone"] %>" class="friend"><%= image_tag(friend["photo"], :style=> "width:30px;margin-right:8px") %><%= friend["firstname"] %> <%= friend["lastname"] %></div>
       <% end %>
     </div>
     <div class="bottom">

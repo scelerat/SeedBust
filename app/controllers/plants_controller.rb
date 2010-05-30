@@ -46,7 +46,7 @@ class PlantsController < ApplicationController
           "POST", { \
             "To" => phone_number, \
             "From" =>"415 366-6417", \
-            "Body" => "Your friend has sent you a new seed with SeedBust. Check it out here http://seedbust.heroku.com/refer/" + plant_id})
+            "Body" => "Your friend #{current_user.fb_first_name} has sent you a new seed with SeedBust. Spread the seed here: http://seedbust.heroku.com/refer/" + plant_id})
       @response.body
       @response.code
     end
@@ -74,6 +74,7 @@ class PlantsController < ApplicationController
   end
   
   def thanks
+    @leaders = Plant.find_by_sql("SELECT Count(origin_user_id) AS TotalSpread FROM Plants ORDER BY TotalSpread DESC" )
   end
 
 end

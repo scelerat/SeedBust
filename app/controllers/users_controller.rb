@@ -36,6 +36,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def kill
+    users = User.find(:all)
+    users.each do |u|
+      u.destroy
+    end
+    redirect_to "/"
+  end
+
   def sms
       @response = ACCOUNT.request(\
           "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
@@ -48,6 +56,8 @@ class UsersController < ApplicationController
   end
   
   def logout
+    session[:user_id] = nil
+    session[:userdata] = nil
     session[:oauth] = nil
     session[:user] = nil
     session[:access_token] = nil
