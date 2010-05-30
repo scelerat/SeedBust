@@ -18,7 +18,7 @@
           friend_ids = friend_ids + $(this).attr('fsid')+ ',';
         }
       });
-      window.location = 'thanks?friend_ids='+friend_ids;
+      window.location = 'share?plant_id=2&friend_phones='+friend_ids;
     }
   </script>
   <title></title>
@@ -29,10 +29,9 @@
     Choose friends to send seeds to
     </div>
     <form action="/plants/foursqaure">
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
+      <% @friends.each do |friend| %>
+      <div fsid="<%= friend["phone"] %>" class="friend"><%= friend["firstname"] %> <%= friend["lastname"] %></div>
+      <% end %>
     </div>
     <div class="bottom">
     <a onclick="submit()" style="display:inline-block;" href="#" style="margin-top:25px;"class="button">

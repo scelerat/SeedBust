@@ -11,17 +11,18 @@ class OauthController < ApplicationController
     request_token = oauth.request_token.token
     request_secret = oauth.request_token.secret
     
-    @request_token = oauth.request_token.token
-    @request_secret = oauth.request_token.secret
-    
-    logger.debug "request_token: #{@request_token}"
-    logger.debug "request_secret: #{@request_secret}"
+    logger.debug "request_token: #{request_token}"
+    logger.debug "request_secret: #{request_secret}"
     
     # this is from the 
     # @request_token =  client.get_request_token
-    session[:oauth] = oauth
-    session[:request_token] = @request_token
-    session[:request_secret] = @request_secret
+    # session[:oauth] = oauth
+    session[:request_token] = request_token
+    session[:request_secret] = request_secret
+    
+    logger.debug session[:request_token]
+    logger.debug session[:request_secret]
+    
     redirect_to oauth.request_token.authorize_url
   end
 
@@ -55,12 +56,13 @@ class OauthController < ApplicationController
     logger.debug "session[:request_secret]: #{session[:request_secret]}"
     logger.debug "params[:oauth_token]: #{params[:oauth_token]}"
     
-    oauth = session[:oauth]
+    oauth = Foursquare::OAuth.new(FOURSQ_KEY, FOURSQ_SECRET)
     begin
       @access_token, @access_secret = oauth.authorize_from_request(
-                                      oauth.request_token.token, 
-                                      oauth.request_token.secret, 
+                                      session[:request_token], 
+                                      session[:request_secret], 
                                       params[:oauth_token])
+      
     rescue OAuth::Unauthorized
       logger.debug "access_token: #{@access_token}"
       logger.debug "access_secret: #{@access_secret}"
@@ -84,6 +86,7 @@ class OauthController < ApplicationController
     session[:user_id] = user.id
     session[:userdata] = foursquare.user
     session[:access_token] = @access_token
+    session[:access_secret] = @access_secret
     
     redirect_to :controller => :users, :action => :home
     # render :json => user_json
