@@ -1,2 +1,5 @@
 gem install oauth2
 gem install json
+gem install oauth
+gem install hashie
+gem install foursquare
