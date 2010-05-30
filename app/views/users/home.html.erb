@@ -1,9 +1,19 @@
 
     <div id="logo">
-    SeedBust
+    <img src="/images/logo.jpeg" style="width:225px;">
     </div>
     <div class="text">
-    SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.<br>
+    SeedBust lets you plant virutal seeds in the <i>real world</i>. Name your plants, send seeds to friends, and watch them spread across the world.<br>
+    <% if current_user and session[:userdata] then %>
+      <%# ugly ugly! %>
+      <% cur_id = current_user.id %>
     Welcome <%= session[:userdata]['firstname'] %><br/><%= image_tag(session[:userdata]['photo'], :options => {:width=>'50'}) %>
-    </div>    
-    <%= link_to "Plant Seed", {:action => :foursquare, :id => current_user.id}, {:class => 'button', :style => 'margin-top:25px'} %>
+    <% else %>
+      <% cur_id = nil%>
+    <% end %>
+    </div>
+    <%= link_to "Get Seeds", { :controller => :seeds,
+                                :action   => :show, 
+                                :id       => cur_id }, 
+                              { :class => 'button', 
+                                :style => 'margin-top:25px'} %>

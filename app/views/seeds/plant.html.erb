@@ -7,13 +7,26 @@
   <title></title>
   <script>
   setInterval (function() {
-  var currentCount = document.getElementById('countdown').innerHTML;
-  var newCount = currentCount - 1;
-  document.getElementById('countdown').innerHTML = newCount;
-  if (newCount == 0) {
+  //var currentCount = document.getElementById('countdown').innerHTML;
+  //var newCount = currentCount - 1;
+  //document.getElementById('countdown').innerHTML = newCount;
+  if (document.getElementById('countdown').innerHTML == "Digging dirt...") {
+    document.getElementById('countdown').innerHTML = "Planting seed...";
+  } else if (document.getElementById('countdown').innerHTML == "Planting seed...") {
+    document.getElementById('countdown').innerHTML = "Watering and fertilizing...";
+  } else if (document.getElementById('countdown').innerHTML == "Watering and fertilizing...") {
+    document.getElementById('countdown').innerHTML = "Sunshine...";
+  } else if (document.getElementById('countdown').innerHTML == "Sunshine...") {
+    document.getElementById('countdown').innerHTML = "Sprouting...";  
+  } else if (document.getElementById('countdown').innerHTML == "Sprouting...") {
+    document.getElementById('countdown').innerHTML = "Growing...";  
+  } else if (document.getElementById('countdown').innerHTML == "Growing...") {
+    document.getElementById('countdown').innerHTML = "Fertilizer growth spurt!";    
+    document.getElementById('countdown').style.color = "green";
+    document.getElementById('countdown').style.fontWeight = "bold";
     window.location = "/plants/edit/<%= @plant.id %>";
   }
-},  1000 );
+},  1300 );
   </script>
   </head>
   <body>
@@ -21,8 +34,6 @@
     <div class="title">
     Your seed has been planted and is growing into a tree!
     </div>
-    <div id="countdown">
-      3
-    </div>
+    <div id="countdown">Digging dirt...</div>
   </body>
 </html>

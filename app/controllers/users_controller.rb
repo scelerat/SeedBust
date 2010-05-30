@@ -4,13 +4,10 @@ class UsersController < ApplicationController
   # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
   # before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
   
+  before_filter :login_required, :except => [:home, :refer]
   
   layout 'standard'
   def home
-      if not current_user then
-        redirect_to :controller => :oauth, :action => :start
-      end
-      @user = current_user
       session[:plant] = nil
       session[:debug] = nil
   end
@@ -19,11 +16,11 @@ class UsersController < ApplicationController
     session[:debug] = params[:id]
     @user = current_user
     @plant = Plant.find_by_id(params[:id])
-    if @plant then
-      session[:plant] = @plant
-    else
+    if not @plant then
+      logger.debug "Somebody tried to get a plant that doesn't exist. id: #{params[:id]}"
       redirect "/"
     end
+    session[:plant] = @plant
   end
 
   def facebook

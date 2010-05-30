@@ -1,2 +1,20 @@
-<h1>Plants#harvest,</h1>
-<p>Find me in app/views/plants/harvest.html.erb</p>
+    <div class="title">
+    Nearby Plants: Grab a Seed
+    </div>
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
+    <center>
+    <table class="leaderboard">  
+    <% @nearby_plants.each do |nearby_plant| %>
+     <% usr = User.find_by_id(nearby_plant["origin_user_id"]) %>
+      <% if usr %>
+       <tr class="leader">
+         <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") if usr.photo %></td>
+         <td class="leader-name"><a href="http://seedbust.heroku.com/refer/<%= nearby_plant.id %>"><%= nearby_plant.name %></a></td>
+      <% end %>
+     <% end %>
+    </table>
+    <%= link_to("Plant your own seed!", "/seeds/show/")%>
+    
+    </center>

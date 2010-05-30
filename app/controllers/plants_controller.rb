@@ -5,6 +5,24 @@ class PlantsController < ApplicationController
   end
 
   def harvest
+    lat = Float(params[:lat])
+    lon = Float(params[:lon])
+    radius = 0.08
+    if lat and lon
+      lat_lower_bound = lat - radius
+      lat_upper_bound = lat + radius
+      lon_lower_bound = lon - radius
+      lon_upper_bound = lon + radius
+      @nearby_plants = Plant.find_by_sql("SELECT * 
+        FROM Plants 
+        WHERE lat > #{lat_lower_bound} 
+        AND lat < #{lat_upper_bound} 
+        AND lon >  #{lon_lower_bound} 
+        AND lon < #{lon_upper_bound}")
+    else
+      flash[:notice] = "Couldn't find any plants nearby #{lat}, #{lon}"
+    end
+    
   end
 
   def mine
