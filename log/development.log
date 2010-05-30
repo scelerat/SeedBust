@@ -6507,3 +6507,267 @@ Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:33:38) [GET]
 Rendering template within layouts/standard
 Rendering plants/show
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:38:26) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:39:00) [GET]
+  Parameters: {"name"=>"Sweetbaby", "id"=>"8"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Update (0.2ms)[0m   [0;1mUPDATE `plants` SET `updated_at` = '2010-05-30 06:39:00', `name` = 'Sweetbaby' WHERE `id` = 8[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/plants/show
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/plants/update_name?name=Sweetbaby&id=8]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:39:00) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+
+ActionView::TemplateError (undefined method `name' for :plant:Symbol) on line #2 of app/views/plants/show.html.erb:
+1:  <div class="title">
+2:   <%= session[:plant.name]%> just grew 12 seeds!
+3:   
+4:   </div>
+5:   <center>
+
+    app/views/plants/show.html.erb:2
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:39:13) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+Completed in 57ms (View: 53, DB: 2) | 200 OK [http://localhost/plants/show]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 23:39:24) [GET]
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/thanks]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:39:29) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 23:39:30) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 23:39:30) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:39:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.1ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 49ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/4]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:39:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/seeds/position/4]
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:40:19) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.5ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 12ms (View: 2, DB: 5) | 200 OK [http://localhost/seeds/position/4]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:40:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/4]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:40:24) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 9ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:40:25) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:40:25) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 9ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 23:40:26) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 23:40:26) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:40:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '2') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/2]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:41:03) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:41:04) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mPlant Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 23:41:05) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 23:41:05) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:41:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.3ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/3]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mPlant Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m

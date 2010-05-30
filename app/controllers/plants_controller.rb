@@ -16,6 +16,7 @@ class PlantsController < ApplicationController
     @plant = Plant.find_by_id(params[:id])
     @plant.name = params[:name]
     @plant.save
+    session[:plant] = @plant
     server = "localhost:3000/"    
     #server = "seedbust.heroku.com/"
     if params[:share] 
