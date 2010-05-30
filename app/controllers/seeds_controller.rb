@@ -18,6 +18,7 @@ class SeedsController < ApplicationController
     if session[:plant] then 
        @plant.origin_user_id = session[:plant].origin_user_id
        @plant.parent_plant_id = session[:plant].id
+       @plant.name = session[:plant].name
     else
        @plant.origin_user_id = current_user.id
     end

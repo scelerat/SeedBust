@@ -9,7 +9,7 @@
     }
   }
   function success(position) {
-    window.location = "/seeds/plant?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&type_id=<%= @plant.type_id %>&parent_plant_id=<%= @plant_id %>";
+    window.location = "/seeds/plant?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&type_id=<%= @seed.id %>";
   }
   function error(msg) {
     alert("Sorry, we need your location, and we can't find it.");
