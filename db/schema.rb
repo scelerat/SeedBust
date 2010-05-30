@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100530005208) do
+ActiveRecord::Schema.define(:version => 20100530011429) do
 
   create_table "plants", :force => true do |t|
     t.integer  "parent_plant_id"
@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(:version => 20100530005208) do
     t.datetime "updated_at"
   end
 
-  create_table "species", :force => true do |t|
+  create_table "types", :force => true do |t|
     t.string   "name"
-    t.string   "image",         :default => "default.png"
+    t.string   "image"
     t.integer  "growth_factor"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,0 +1,5 @@
+rubyist-aasm --source http://gems.github.com
+right_aws
+rmagick
+thoughtbot-paperclip --version 2.3.1 --source http://gems.github.com
+oauth2

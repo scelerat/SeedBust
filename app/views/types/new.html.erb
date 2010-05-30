@@ -1,0 +1,14 @@
+<h1>New type</h1>
+
+<% form_for(@type) do |f| %>
+  <%= f.error_messages %>
+   <p><%= label_tag 'name' %><br/>
+    <%= f.text_field :name %></p>
+  <p><%= label_tag "Image name (put in public/images)" %><br/>
+    <%= f.text_field :image %></p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', types_path %>

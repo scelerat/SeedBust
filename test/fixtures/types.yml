@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  image: MyString
+  growth_factor: 1
+
+two:
+  name: MyString
+  image: MyString
+  growth_factor: 1
