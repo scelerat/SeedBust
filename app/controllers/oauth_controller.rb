@@ -6,6 +6,7 @@ class OauthController < ApplicationController
   end
 
   def callback
+    require 'json'
     access_token = client.web_server.get_access_token(
       params[:code], :redirect_uri => oauth_callback_url
     )
@@ -13,7 +14,10 @@ class OauthController < ApplicationController
     user_json = access_token.get('/me')
     # in reality you would at this point store the access_token.token value as well as 
     # any user info you wanted
-    render :json => user_json
+    user_record = JSON.parse(user_json)
+    session[:user] = User.find_by_fb_id(user_record.id)
+    redirect_to :controller => :users, :action => :home
+    # render :json => user_json
   end
 
   protected

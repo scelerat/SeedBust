@@ -5,6 +5,15 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   layout 'standard'
+  
+  def current_user
+    session[:user]
+  end
+  helper_method :current_user
+  # Include standard authentication routines.
+  #require "#{RAILS_ROOT}/vendor/plugins/restful_authentication/authenticated_system.rb"
+  #include AuthenticatedSystem
+  
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 end
