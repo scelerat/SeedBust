@@ -39,7 +39,7 @@
     This name passes onto future generations of this plant.
     </div><center>
     <form name="update_name" action="/plants/update_name">
-      <input type="text" name="name" value="">
+      <input type="text" name="name" value="<%= @plant.name %>">
       <input type="hidden" name="id" value="<%= @plant.id %>">
       <a href="#" onclick="document.update_name.submit()" style="margin-top:25px;" class="button">
       Name It!
