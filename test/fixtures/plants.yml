@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  parent_plant_id: 1
+  planted_user_id: 1
+  origin_user_id: 1
+  name: MyString
+  state: MyString
+  plant_id: 1
+  date_planted: 2010-05-29
+  lat: 1
+  lon: 1
+
+two:
+  parent_plant_id: 1
+  planted_user_id: 1
+  origin_user_id: 1
+  name: MyString
+  state: MyString
+  plant_id: 1
+  date_planted: 2010-05-29
+  lat: 1
+  lon: 1
