@@ -22,3 +22,5 @@ FACEBOOK_SECRET           = 'b2eb443b293f7fd3c93169c037acae07'
 FACEBOOK_URL              = 'https://graph.facebook.com'
 
 FOURSQUARE = '' # curl -u PHONE_OR_EMAIL:PASSWORD http://api.foursquare.com/v1/user
+
+SERVER = "seedbust.local/"

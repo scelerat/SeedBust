@@ -17,7 +17,7 @@ class PlantsController < ApplicationController
     @plant.name = params[:name]
     @plant.save
     session[:plant] = @plant
-    server = "localhost:3000/"    
+    server = SERVER    
     #server = "seedbust.heroku.com/"
     if params[:share] 
       url = 'http://m.facebook.com/connect/prompt_feed.php?api_key=3bf44bb266e9d29f92d71fb103955006&attachment={'+
