@@ -14,6 +14,6 @@ class Plant < ActiveRecord::Base
     #@leaders.collect(&:origin_user_id).sum.to_f
     #/@leaders.length if @leaders.length > 0
     
-    @leaders = self.find_by_sql("SELECT Count(origin_user_id) AS CountOfID, Plant_id, origin_user_id FROM Plants GROUP BY Origin_user_id ORDER BY CountOfID DESC")
+    @leaders = self.find_by_sql("SELECT Count(origin_user_id) AS CountOfID, origin_user_id FROM Plants GROUP BY Origin_user_id ORDER BY CountOfID DESC")
   end
 end
