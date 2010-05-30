@@ -24,7 +24,7 @@ class PlantsController < ApplicationController
       '"name":"SeedBust",'+
       '"caption":"I+just+planted+a+seed+named+'+ params[:name] +'",'+
       '"description":"Take+a+seed+and+plant+it+to+show+your+support.",'+
-      '"href":"http%3A%2F%2F' + server + '"' +
+      '"href":"http%3A%2F%2F' + server + '",' +
   '"media":[{"type":"image","src":"http%3A%2F%2Fimg363.imageshack.us%2Fimg363%2F9931%2F9122plantcartoonls8.jpg","href":"http%3A%2F%2F' + server + '"}]}'+
       '&preview=1'+
       '&user_message_prompt=Tell+the+world+about+your+plant!'+
