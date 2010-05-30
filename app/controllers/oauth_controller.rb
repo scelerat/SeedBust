@@ -36,8 +36,8 @@ class OauthController < ApplicationController
   protected
 
   def client
-    @client ||= OAuth2::Client.new(
-      FACEBOOK_APPLICATION_ID, FACEBOOK_SECRET, :site => 'https://graph.facebook.com'
-    )
+    # @client ||= OAuth2::Client.new(
+    #   FACEBOOK_APPLICATION_ID, FACEBOOK_SECRET, :site => 'https://graph.facebook.com'
+    # )
   end
 end
