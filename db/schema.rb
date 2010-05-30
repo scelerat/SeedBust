@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20100530094230) do
     t.integer  "lon",             :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "type_id"
   end
 
   create_table "types", :force => true do |t|

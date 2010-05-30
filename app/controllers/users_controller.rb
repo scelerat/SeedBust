@@ -10,6 +10,27 @@ class UsersController < ApplicationController
       if not current_user then
         redirect_to :controller => :oauth, :action => :start
       end
+      
+      @user = current_user
+      session[:user] = @user
+      session[:plant] = nil
+      session[:debug] = nil
+  end
+
+  def refer
+    session[:debug] = params[:id]
+    @plant = Plant.find_by_id(params[:id])
+    if @plant then
+      session[:plant] = @plant
+      @user = User.new()
+      @user.fb_first_name = "New"
+      @user.fb_last_name = "Guy" + params[:id]
+      @user.save
+      session[:user] = @user
+    else
+     redirect "/"
+    end
+>>>>>>> bef3c322b161bc0bde05c94292742c6653accbbf
   end
 
   def facebook
@@ -22,7 +43,15 @@ class UsersController < ApplicationController
     end
   end
 
-  def profile
+  def sms
+      @response = ACCOUNT.request(\
+          "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
+          "POST", { \
+            "To" =>"5095526211", \
+            "From" =>"415-599-2671", \
+            "Body" =>"George sent you a new seed with SeedBust."})
+      @response.body
+      @response.code
   end
   
   def logout

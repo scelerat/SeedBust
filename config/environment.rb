@@ -20,6 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   # config.gem "oauth2"
+  #config.gem "twiliolib"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -42,4 +43,19 @@ Rails::Initializer.run do |config|
   
   # Authenticated user additions
   config.active_record.observers = :user_observer
+  require 'lib/twiliolib.rb'
+  
+    API_VERSION = '2008-08-01'
+
+    # Twilio AccountSid and AuthToken
+                   
+    ACCOUNT_SID = 'ACd68795defff7cfda994cfd09d6895fed'
+                     
+    ACCOUNT_TOKEN = 'c36f140bd45b863419a443c3326e0f76'
+
+    # Outgoing Caller ID previously validated with Twilio
+    CALLER_ID = '4155992671';
+
+    # Create a Twilio REST account object using your Twilio account ID and token
+    ACCOUNT = Twilio::RestAccount.new(ACCOUNT_SID, ACCOUNT_TOKEN)
 end
