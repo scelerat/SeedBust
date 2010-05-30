@@ -29,10 +29,9 @@
     Choose friends to send seeds to
     </div>
     <form action="/plants/foursqaure">
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
-      <div fsid="3487634" class="friend">Tom Jones</div>
+      <% @friends.each do |friend| %>
+      <div fsid="<%= friend["id"] %>" class="friend"><%= friend["firstname"] %> <%= friend["lastname"] %></div>
+      <% end %>
     </div>
     <div class="bottom">
     <a onclick="submit()" style="display:inline-block;" href="#" style="margin-top:25px;"class="button">

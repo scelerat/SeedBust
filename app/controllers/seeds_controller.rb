@@ -15,9 +15,9 @@ class SeedsController < ApplicationController
        @plant.origin_user_id = session[:plant].origin_user_id
        @plant.parent_plant_id = session[:plant].id
     else
-       @plant.origin_user_id = session[:user].id
+       @plant.origin_user_id = current_user.id
     end
-    @plant.planted_user_id = session[:user].id
+    @plant.planted_user_id = current_user.id
     @plant.save
   end
 
@@ -26,7 +26,7 @@ class SeedsController < ApplicationController
   end
   
   def position
-    session[:seed_id] = params[:id]
+    #session[:seed_id] = params[:id]
     @seed = Type.find_by_id(params[:id])
   end
   

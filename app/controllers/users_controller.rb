@@ -56,6 +56,7 @@ class UsersController < ApplicationController
     session[:oauth] = nil
     session[:user] = nil
     session[:access_token] = nil
+    session[:access_secret] = nil
     session[:foursquare] = nil
     redirect_to :action => :home
   end
