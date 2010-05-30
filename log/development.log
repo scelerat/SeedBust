@@ -2269,3 +2269,144 @@ ActionController::RoutingError (No route matches "/images/seeds.png" with {:meth
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 18:45:36) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 9ms (View: 3, DB: 3) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:45:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 18:45:47) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:45:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 18:50:20) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:50:23) [GET]
+
+ActionController::RoutingError (No route matches "/tpes" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 18:50:27) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:50:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#new (for 127.0.0.1 at 2010-05-29 18:50:29) [GET]
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Rendering template within layouts/types
+Rendering types/new
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/types/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#create (for 127.0.0.1 at 2010-05-29 18:50:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z6XI5YMJ69Py8ExEHGro3MWAjyx1pTDoyfUfBTeh1uE=", "type"=>{"name"=>"dave", "image"=>"dave.png"}}
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mType Create (0.2ms)[0m   [0mINSERT INTO `types` (`name`, `updated_at`, `growth_factor`, `image`, `created_at`) VALUES('dave', '2010-05-30 01:50:36', NULL, 'dave.png', '2010-05-30 01:50:36')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/types/3
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/types]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#show (for 127.0.0.1 at 2010-05-29 18:50:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (0.6ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+Rendering template within layouts/types
+Rendering types/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/types/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:50:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#edit (for 127.0.0.1 at 2010-05-29 18:50:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.7ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+Rendering template within layouts/types
+Rendering types/edit
+Completed in 12ms (View: 5, DB: 4) | 200 OK [http://localhost/types/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 18:50:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
