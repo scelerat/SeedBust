@@ -17,11 +17,18 @@
   </script>
     
     <div class="title">
-    Your seed is ready to plant!
+    Choose a seed to plant!
     </div>
-    <center>
-      <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
-    </center>
+    <center style="padding: 15px;">
+      <table><tr>
+        <% count = 0 %>
+      <% @seeds.each do |seed| %>
+        <% count = count + 1 %>
+        <td><%= link_to(image_tag(seed.image, :style => "border:0px"), {:action => :plant, :id => seed.id} ) %></td>
+        <% if count == 2 then %></tr><tr><% end %>
+      <% end %>
+      </tr></table>
+     </center>
     <a href="#" onclick="getPosition()" style=""class="button">
     Next
     </a>
