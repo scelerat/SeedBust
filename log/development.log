@@ -3612,3 +3612,1377 @@ Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 21:18:09) [GET]
 Rendering template within layouts/standard
 Rendering plants/edit
 Completed in 43ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (11.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:40:10) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 93ms (View: 90, DB: 12) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 21:40:13) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:40:21) [GET]
+  [4;35;1mType Load (373.9ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 637ms (View: 187, DB: 375) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:40:40) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (254.0ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 423ms (View: 157, DB: 255) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:42:12) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 182ms (View: 144, DB: 3) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:43:20) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+
+ActionView::TemplateError (wrong number of arguments (2 for 3)) on line #23 of app/views/seeds/show.html.erb:
+20:     Choose a seed to plant!
+21:     </div>
+22:     <center>
+23:       <%= select ("type_id", @seeds.map {|u| [u.name,u.id]}) %>
+24:       <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
+25:     </center>
+26:     <a href="#" onclick="getPosition()" style=""class="button">
+
+    app/views/seeds/show.html.erb:23:in `select'
+    app/views/seeds/show.html.erb:23
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:43:43) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 48ms (View: 31, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:44:09) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 46ms (View: 36, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:45:12) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 28ms (View: 10, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:47:20) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (8.1ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 19ms (View: 7, DB: 9) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:48:10) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:48:18) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:48:32) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+
+ActionView::TemplateError (Symbol as array index) on line #23 of app/views/seeds/show.html.erb:
+20:     Choose a seed to plant!
+21:     </div>
+22:     <center>
+23:       <%= select_tag("type", '', @seeds.map {|u| [u.name,u.id]}) %>
+24:       <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
+25:     </center>
+26:     <a href="#" onclick="getPosition()" style=""class="button">
+
+    app/views/seeds/show.html.erb:23
+
+Rendered rescues/_trace (88.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:48:43) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+ERROR: compiling _run_erb_app47views47seeds47show46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:23: syntax error, unexpected ';', expecting ')'
+...ct_tag("type", @seeds ).to_s); @output_buffer.concat "\n"
+                              ^
+Function body:           def _run_erb_app47views47seeds47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <script type=\"text/javascript\">\n"
+@output_buffer.concat "  function getPosition() {\n"
+@output_buffer.concat "    if (navigator.geolocation) {\n"
+@output_buffer.concat "      navigator.geolocation.getCurrentPosition(success, error);\n"
+@output_buffer.concat "    } else {\n"
+@output_buffer.concat "      error('not supported');\n"
+@output_buffer.concat "    }\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function success(position) {\n"
+@output_buffer.concat "    window.location = \"plant?lat=\"+position.coords.latitude+\"&long=\"+position.coords.longitude;\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function error(msg) {\n"
+@output_buffer.concat "    alert(\"Sorry, we need your location, and we can't find it.\");\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  </script>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <div class=\"title\">\n"
+@output_buffer.concat "    Choose a seed to plant!\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <center>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( select_tag("type", @seeds ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "      <img style=\"height:200px;padding:25px;\" src=\"http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif\"/>\n"
+@output_buffer.concat "    </center>\n"
+@output_buffer.concat "    <a href=\"#\" onclick=\"getPosition()\" style=\"\"class=\"button\">\n"
+@output_buffer.concat "    Next\n"
+@output_buffer.concat "    </a>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to "Plant!", :action => :plant ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:37:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:23: syntax error, unexpected ';', expecting ')'
+...ct_tag("type", @seeds ).to_s); @output_buffer.concat "\n"
+                              ^) on line #23 of app/views/seeds/show.html.erb:
+20:     Choose a seed to plant!
+21:     </div>
+22:     <center>
+23:       <%= select_tag("type", @seeds %>
+24:       <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
+25:     </center>
+26:     <a href="#" onclick="getPosition()" style=""class="button">
+
+    app/views/seeds/show.html.erb:37:in `compile!'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:48:48) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:49:02) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 6, DB: 3) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:50:24) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+ERROR: compiling _run_erb_app47views47seeds47show46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:23: syntax error, unexpected ';'
+...      ";  @seeds.each |seed| ; @output_buffer.concat "\n"
+                              ^
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:37: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47seeds47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <script type=\"text/javascript\">\n"
+@output_buffer.concat "  function getPosition() {\n"
+@output_buffer.concat "    if (navigator.geolocation) {\n"
+@output_buffer.concat "      navigator.geolocation.getCurrentPosition(success, error);\n"
+@output_buffer.concat "    } else {\n"
+@output_buffer.concat "      error('not supported');\n"
+@output_buffer.concat "    }\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function success(position) {\n"
+@output_buffer.concat "    window.location = \"plant?lat=\"+position.coords.latitude+\"&long=\"+position.coords.longitude;\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function error(msg) {\n"
+@output_buffer.concat "    alert(\"Sorry, we need your location, and we can't find it.\");\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  </script>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <div class=\"title\">\n"
+@output_buffer.concat "    Choose a seed to plant!\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <center>\n"
+@output_buffer.concat "      ";  @seeds.each |seed| ; @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( seed.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "      ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      <img style=\"height:200px;padding:25px;\" src=\"http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif\"/>\n"
+@output_buffer.concat "    </center>\n"
+@output_buffer.concat "    <a href=\"#\" onclick=\"getPosition()\" style=\"\"class=\"button\">\n"
+@output_buffer.concat "    Next\n"
+@output_buffer.concat "    </a>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to "Plant!", :action => :plant ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:37:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:23: syntax error, unexpected ';'
+...      ";  @seeds.each |seed| ; @output_buffer.concat "\n"
+                              ^
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:37: syntax error, unexpected kENSURE, expecting $end) on line #23 of app/views/seeds/show.html.erb:
+20:     Choose a seed to plant!
+21:     </div>
+22:     <center>
+23:       <% @seeds.each |seed| %>
+24:         <%= seed.name %>
+25:       <% end %>
+26:       <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
+
+    app/views/seeds/show.html.erb:37:in `compile!'
+
+Rendered rescues/_trace (36.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:50:33) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:51:26) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:52:11) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 15ms (View: 9, DB: 3) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/Finn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:52:19) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:52:31) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:52:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 21:56:20) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 104ms (View: 89, DB: 2) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#edit (for 127.0.0.1 at 2010-05-29 21:56:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (129.2ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+Rendering template within layouts/types
+Rendering types/edit
+Completed in 180ms (View: 45, DB: 131) | 200 OK [http://localhost/types/2/edit]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/seeds.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#update (for 127.0.0.1 at 2010-05-29 21:56:36) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"ncavJou73Egnq4xXh6Xa39XR0knY3I3GLomQqQEdJK0=", "type"=>{"name"=>"Maple", "image"=>"maple.jpg"}, "id"=>"2"}
+  [4;36;1mType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (0.6ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mType Update (208.6ms)[0m   [0mUPDATE `types` SET `image` = 'maple.jpg', `updated_at` = '2010-05-30 04:56:36', `name` = 'Maple' WHERE `id` = 2[0m
+  [4;36;1mSQL (53.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/types/2
+Completed in 340ms (DB: 266) | 302 Found [http://localhost/types/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#show (for 127.0.0.1 at 2010-05-29 21:56:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mType Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 2) [0m
+Rendering template within layouts/types
+Rendering types/show
+Completed in 13ms (View: 3, DB: 4) | 200 OK [http://localhost/types/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 21:56:41) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/types]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:56:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#edit (for 127.0.0.1 at 2010-05-29 21:56:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.6ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+Rendering template within layouts/types
+Rendering types/edit
+Completed in 12ms (View: 4, DB: 3) | 200 OK [http://localhost/types/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:56:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/dave.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#update (for 127.0.0.1 at 2010-05-29 21:57:05) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"ncavJou73Egnq4xXh6Xa39XR0knY3I3GLomQqQEdJK0=", "type"=>{"name"=>"strawberry", "image"=>"strawberry.jpg"}, "id"=>"3"}
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (0.6ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mType Update (0.2ms)[0m   [0;1mUPDATE `types` SET `image` = 'strawberry.jpg', `updated_at` = '2010-05-30 04:57:05', `name` = 'strawberry' WHERE `id` = 3[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/types/3
+Completed in 10ms (DB: 4) | 302 Found [http://localhost/types/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#show (for 127.0.0.1 at 2010-05-29 21:57:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (0.6ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 3) [0m
+Rendering template within layouts/types
+Rendering types/show
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://localhost/types/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 21:57:07) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#new (for 127.0.0.1 at 2010-05-29 21:57:10) [GET]
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Rendering template within layouts/types
+Rendering types/new
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/types/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#create (for 127.0.0.1 at 2010-05-29 21:57:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ncavJou73Egnq4xXh6Xa39XR0knY3I3GLomQqQEdJK0=", "type"=>{"name"=>"palm", "image"=>"palm.jpg"}}
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mType Create (78.2ms)[0m   [0mINSERT INTO `types` (`name`, `updated_at`, `growth_factor`, `image`, `created_at`) VALUES('palm', '2010-05-30 04:57:18', NULL, 'palm.jpg', '2010-05-30 04:57:18')[0m
+  [4;36;1mSQL (29.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/types/4
+Completed in 117ms (DB: 109) | 302 Found [http://localhost/types]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#show (for 127.0.0.1 at 2010-05-29 21:57:18) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 4) [0m
+Rendering template within layouts/types
+Rendering types/show
+Completed in 11ms (View: 4, DB: 3) | 200 OK [http://localhost/types/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 21:57:20) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 10ms (View: 5, DB: 2) | 200 OK [http://localhost/types]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#new (for 127.0.0.1 at 2010-05-29 21:57:23) [GET]
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Rendering template within layouts/types
+Rendering types/new
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/types/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#create (for 127.0.0.1 at 2010-05-29 21:57:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ncavJou73Egnq4xXh6Xa39XR0knY3I3GLomQqQEdJK0=", "type"=>{"name"=>"cannibus", "image"=>"cannibus.jpg"}}
+  [4;36;1mType Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mType Create (1.2ms)[0m   [0;1mINSERT INTO `types` (`name`, `updated_at`, `growth_factor`, `image`, `created_at`) VALUES('cannibus', '2010-05-30 04:57:33', NULL, 'cannibus.jpg', '2010-05-30 04:57:33')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/types/5
+Completed in 11ms (DB: 4) | 302 Found [http://localhost/types]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#show (for 127.0.0.1 at 2010-05-29 21:57:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (1.3ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = 5) [0m
+Rendering template within layouts/types
+Rendering types/show
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/types/5]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TypesController#index (for 127.0.0.1 at 2010-05-29 21:57:35) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` [0m
+Rendering template within layouts/types
+Rendering types/index
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/types]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:59:56) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 21:59:57) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:59:58) [GET]
+  [4;36;1mType Load (0.5ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+ERROR: compiling _run_erb_app47views47seeds47show46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:41: syntax error, unexpected kENSURE, expecting kEND
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:43: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47seeds47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <script type=\"text/javascript\">\n"
+@output_buffer.concat "  function getPosition() {\n"
+@output_buffer.concat "    if (navigator.geolocation) {\n"
+@output_buffer.concat "      navigator.geolocation.getCurrentPosition(success, error);\n"
+@output_buffer.concat "    } else {\n"
+@output_buffer.concat "      error('not supported');\n"
+@output_buffer.concat "    }\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function success(position) {\n"
+@output_buffer.concat "    window.location = \"plant?lat=\"+position.coords.latitude+\"&long=\"+position.coords.longitude;\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function error(msg) {\n"
+@output_buffer.concat "    alert(\"Sorry, we need your location, and we can't find it.\");\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  </script>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <div class=\"title\">\n"
+@output_buffer.concat "    Choose a seed to plant!\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <center>\n"
+@output_buffer.concat "      <table><tr>\n"
+@output_buffer.concat "      ";  @seeds.each do |seed| ; @output_buffer.concat "\n"
+@output_buffer.concat "        ";  count = count + 1 ; @output_buffer.concat "\n"
+@output_buffer.concat "        <td>"; @output_buffer.concat(( image_tag(seed.image)).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        ";  if count = 2 then ; @output_buffer.concat "</tr><tr>\n"
+@output_buffer.concat "        ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      </tr></table>\n"
+@output_buffer.concat "      <img style=\"height:200px;padding:25px;\" src=\"http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif\"/>\n"
+@output_buffer.concat "    </center>\n"
+@output_buffer.concat "    <a href=\"#\" onclick=\"getPosition()\" style=\"\"class=\"button\">\n"
+@output_buffer.concat "    Next\n"
+@output_buffer.concat "    </a>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to "Plant!", :action => :plant ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:43:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:41: syntax error, unexpected kENSURE, expecting kEND
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:43: syntax error, unexpected $end, expecting kEND) on line #41 of app/views/seeds/show.html.erb:
+38: </html>
+39: <p><%= link_to "Plant!", :action => :plant %></p>
+
+    app/views/seeds/show.html.erb:43:in `compile!'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:00:10) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #25 of app/views/seeds/show.html.erb:
+22:     <center>
+23:       <table><tr>
+24:       <% @seeds.each do |seed| %>
+25:         <% count = count + 1 %>
+26:         <td><%= image_tag(seed.image)%></td>
+27:         <% if count = 2 then %></tr><tr>
+28:         <% end %>
+
+    app/views/seeds/show.html.erb:25
+    app/views/seeds/show.html.erb:24:in `each'
+    app/views/seeds/show.html.erb:24
+
+Rendered rescues/_trace (87.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:00:36) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 7, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:00:52) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:01:37) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 7, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:01:52) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 58ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:03:14) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+ERROR: compiling _run_erb_app47views47seeds47show46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:27: syntax error, unexpected ';', expecting ')'
+...plant, :id => seed.id ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47seeds47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <script type=\"text/javascript\">\n"
+@output_buffer.concat "  function getPosition() {\n"
+@output_buffer.concat "    if (navigator.geolocation) {\n"
+@output_buffer.concat "      navigator.geolocation.getCurrentPosition(success, error);\n"
+@output_buffer.concat "    } else {\n"
+@output_buffer.concat "      error('not supported');\n"
+@output_buffer.concat "    }\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function success(position) {\n"
+@output_buffer.concat "    window.location = \"plant?lat=\"+position.coords.latitude+\"&long=\"+position.coords.longitude;\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function error(msg) {\n"
+@output_buffer.concat "    alert(\"Sorry, we need your location, and we can't find it.\");\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  </script>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <div class=\"title\">\n"
+@output_buffer.concat "    Choose a seed to plant!\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <center style=\"padding: 15px;\">\n"
+@output_buffer.concat "      <table><tr>\n"
+@output_buffer.concat "        ";  count = 0 ; @output_buffer.concat "\n"
+@output_buffer.concat "      ";  @seeds.each do |seed| ; @output_buffer.concat "\n"
+@output_buffer.concat "        ";  count = count + 1 ; @output_buffer.concat "\n"
+@output_buffer.concat "        <td>"; @output_buffer.concat(( link_to(image_tag(seed.image), :action => :plant, :id => seed.id ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        ";  if count == 2 then ; @output_buffer.concat "</tr><tr>";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      </tr></table>\n"
+@output_buffer.concat "     </center>\n"
+@output_buffer.concat "    <a href=\"#\" onclick=\"getPosition()\" style=\"\"class=\"button\">\n"
+@output_buffer.concat "    Next\n"
+@output_buffer.concat "    </a>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to "Plant!", :action => :plant ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:43:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:27: syntax error, unexpected ';', expecting ')'
+...plant, :id => seed.id ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #27 of app/views/seeds/show.html.erb:
+24:         <% count = 0 %>
+25:       <% @seeds.each do |seed| %>
+26:         <% count = count + 1 %>
+27:         <td><%= link_to(image_tag(seed.image), :action => :plant, :id => seed.id %></td>
+28:         <% if count == 2 then %></tr><tr><% end %>
+29:       <% end %>
+30:       </tr></table>
+
+    app/views/seeds/show.html.erb:43:in `compile!'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:03:36) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+ERROR: compiling _run_erb_app47views47seeds47show46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:27: syntax error, unexpected ';', expecting ')'
+...lant, :id => seed.id} ).to_s); @output_buffer.concat "</td>\...
+                              ^
+Function body:           def _run_erb_app47views47seeds47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <script type=\"text/javascript\">\n"
+@output_buffer.concat "  function getPosition() {\n"
+@output_buffer.concat "    if (navigator.geolocation) {\n"
+@output_buffer.concat "      navigator.geolocation.getCurrentPosition(success, error);\n"
+@output_buffer.concat "    } else {\n"
+@output_buffer.concat "      error('not supported');\n"
+@output_buffer.concat "    }\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function success(position) {\n"
+@output_buffer.concat "    window.location = \"plant?lat=\"+position.coords.latitude+\"&long=\"+position.coords.longitude;\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  function error(msg) {\n"
+@output_buffer.concat "    alert(\"Sorry, we need your location, and we can't find it.\");\n"
+@output_buffer.concat "  }\n"
+@output_buffer.concat "  </script>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <div class=\"title\">\n"
+@output_buffer.concat "    Choose a seed to plant!\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <center style=\"padding: 15px;\">\n"
+@output_buffer.concat "      <table><tr>\n"
+@output_buffer.concat "        ";  count = 0 ; @output_buffer.concat "\n"
+@output_buffer.concat "      ";  @seeds.each do |seed| ; @output_buffer.concat "\n"
+@output_buffer.concat "        ";  count = count + 1 ; @output_buffer.concat "\n"
+@output_buffer.concat "        <td>"; @output_buffer.concat(( link_to(image_tag(seed.image), {:action => :plant, :id => seed.id} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        ";  if count == 2 then ; @output_buffer.concat "</tr><tr>";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "      </tr></table>\n"
+@output_buffer.concat "     </center>\n"
+@output_buffer.concat "    <a href=\"#\" onclick=\"getPosition()\" style=\"\"class=\"button\">\n"
+@output_buffer.concat "    Next\n"
+@output_buffer.concat "    </a>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to "Plant!", :action => :plant ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:43:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/seeds/show.html.erb:27: syntax error, unexpected ';', expecting ')'
+...lant, :id => seed.id} ).to_s); @output_buffer.concat "</td>\...
+                              ^) on line #27 of app/views/seeds/show.html.erb:
+24:         <% count = 0 %>
+25:       <% @seeds.each do |seed| %>
+26:         <% count = count + 1 %>
+27:         <td><%= link_to(image_tag(seed.image), {:action => :plant, :id => seed.id} %></td>
+28:         <% if count == 2 then %></tr><tr><% end %>
+29:       <% end %>
+30:       </tr></table>
+
+    app/views/seeds/show.html.erb:43:in `compile!'
+
+Rendered rescues/_trace (87.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:04:01) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 12ms (View: 7, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:04:23) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:04:29) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant to css (for 127.0.0.1 at 2010-05-29 22:04:29) [GET]
+  Parameters: {"id"=>"main"}
+
+ActionView::MissingTemplate (Missing template seeds/plant.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:04:32) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]
