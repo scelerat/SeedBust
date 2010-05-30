@@ -1,6 +1,7 @@
 class PlantsController < ApplicationController
   def show
     @plant = Plant.find(params[:id])
+    session[:plant_id] = params[:id]
   end
 
   def harvest
@@ -39,18 +40,17 @@ class PlantsController < ApplicationController
   
   def share
     friend_phones = params[:friend_phones].split(',')
-    plant_id = params[:plant_id]
     friend_phones.each do |phone_number|
       @response = ACCOUNT.request(\
           "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
           "POST", { \
             "To" => phone_number, \
             "From" =>"415 366-6417", \
-            "Body" => "Your friend #{current_user.fb_first_name} has sent you a new seed with SeedBust. Spread the seed here: http://seedbust.heroku.com/refer/" + plant_id})
+            "Body" => "Your friend #{current_user.fb_first_name} has sent you a new seed with SeedBust. Spread the seed here: http://seedbust.heroku.com/refer/#{session[:plant_id]}" })
       @response.body
       @response.code
     end
-    
+    session[:plant_id] = nil
     redirect_to :action => :thanks
   end
   
@@ -67,7 +67,6 @@ class PlantsController < ApplicationController
     logger.debug oauth
     logger.debug foursquare.friends
     @friends = foursquare.friends
-    
   end
 
   def gift
