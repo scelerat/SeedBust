@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
   def current_user
     session[:user]
   end
+  
+  def access_token
+    session[:access_token]
+  end
   helper_method :current_user
   # Include standard authentication routines.
   #require "#{RAILS_ROOT}/vendor/plugins/restful_authentication/authenticated_system.rb"

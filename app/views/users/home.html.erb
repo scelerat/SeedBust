@@ -1,9 +1,7 @@
 <h1>Seedbust</h1>
 <p>Description of SeedBust. You need to login with FB connect. It's awesome</p>
-<p><%= link_to("login", :action => :facebook)%></p>
-
-<% if not current_user.nil? then %>
-<p><%= current_user %></p>
+<% if  session[:user] %>
+<p>Welcome, <%= current_user[:fb_id] %>!</p>
 <% else %>
-<p>You're not logged in.</p>
+<p><%= link_to("login", :controller=> :oauth, :action => :start)%></p>
 <% end %>

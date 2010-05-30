@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   
   # Protect these actions behind an admin login
   # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
-  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
+  # before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
   
   
   layout 'standard'
@@ -16,6 +16,11 @@ class UsersController < ApplicationController
   def profile
   end
   
+  def logout
+    session[:user] = nil
+    session[:access_token] = nil
+    redirect_to :action => :home
+  end
   # render new.rhtml
     def new
       @user = User.new

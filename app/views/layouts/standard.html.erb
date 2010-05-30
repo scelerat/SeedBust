@@ -7,6 +7,11 @@
 
 <body>
   <div style="width: 320px; height:500px; border: 2px solid; padding: 12px;margin:auto">
+<div class="login-state">
+    <% if current_user then %>
+    <%= link_to "logout", :controller => :users, :action => :logout %>
+    <% end %>
+</div>
  <%= yield %>
  </div>
 </body>
