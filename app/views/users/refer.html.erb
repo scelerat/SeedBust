@@ -1,3 +1,18 @@
+<script type="text/javascript">
+function getPosition() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    error('not supported');
+  }
+}
+function success(position) {
+window.location = "/seeds/plant?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&type_id=<%= @plant.type_id %>&parent_plant_id=<%= @plant_id %>";
+}
+function error(msg) {
+  alert("Sorry, we need your location, and we can't find it.");
+}
+</script>
 
    <div id="logo">
    <img src="/images/logo.jpeg" style="width:225px;">
@@ -8,12 +23,16 @@
     <div class="text">
     And... it looks like you got a special seed named "<%= @plant.name %>" from <%= @plant.planted_user.fb_first_name %>. Now it's up to you to plant it and spread their seed far and wide.<br>
     </div>    
+
     
-    <%= link_to "Plant Seed", { :controller => :seeds, :action     => :plant, 
+
+    <%= link_to "Plant Seed", { :controller => :seeds,
+                                :action     => :plant, 
                                 :id         => current_user.id, 
                                 :plant_id   => @plant.id}, 
                               { :class  => 'button', 
-                                :style  => 'margin-top:25px'} %>
+                                :style  => 'margin-top:25px',
+                                :onclick => 'getPosition()'} %>
 
 <center>
   <iframe style="margin-top:15px;" width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=<%= @plant.lat %>,<%= @plant.lon %>&amp;sspn=0.012485,0.021865&amp;ie=UTF8&amp;spn=0.020351,0.025749&amp;z=14&amp;output=embed"></iframe>

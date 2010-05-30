@@ -8,6 +8,8 @@ class SeedsController < ApplicationController
   end
 
   def plant
+    
+      
     @plant = Plant.new
     @plant.state = 'PLANTED'
     @plant.lat = params[:lat]
@@ -16,6 +18,7 @@ class SeedsController < ApplicationController
     if session[:plant] then 
        @plant.origin_user_id = session[:plant].origin_user_id
        @plant.parent_plant_id = session[:plant].id
+       @plant.name = session[:plant].name
     else
        @plant.origin_user_id = current_user.id
     end
@@ -33,7 +36,8 @@ class SeedsController < ApplicationController
   end
   
   def plant_existing 
-    @plant = Plant.find(params[:plant_id])
+    @parent_plant = Plant.find(params[:plant_id])
+    
     
   end
 end
