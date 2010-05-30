@@ -7,10 +7,11 @@ class UsersController < ApplicationController
   
   layout 'standard'
   def home
-      @user = User.new()
-      @user.fb_first_name = "Frank"
-      @user.fb_last_name = "Williams"
-      @user.save
+      if not current_user then
+        redirect_to :controller => :oauth, :action => :start
+      end
+      
+      @user = current_user
       session[:user] = @user
       session[:plant] = nil
       session[:debug] = nil
@@ -29,6 +30,7 @@ class UsersController < ApplicationController
     else
      redirect "/"
     end
+>>>>>>> bef3c322b161bc0bde05c94292742c6653accbbf
   end
 
   def facebook
