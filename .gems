@@ -2,8 +2,4 @@ rubyist-aasm --source http://gems.github.com
 right_aws
 rmagick
 thoughtbot-paperclip --version 2.3.1 --source http://gems.github.com
-justinfrench-formtastic  --source http://gems.github.com
-jackdempsey-acts_as_commentable   --source http://gems.github.com
-timecop
-hoptoad_notifier
-oath2
+oauth2
