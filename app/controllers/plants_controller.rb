@@ -36,8 +36,17 @@ class PlantsController < ApplicationController
       redirect_to :action => :show
     end 
   end
-
-  def share
+  
+  def share(fs_users, plant_id)
+    fs_users.each do |u|
+      @response = ACCOUNT.request(\
+          "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
+          "POST", { \
+            "To" => u.phone, \
+            "From" =>"415 366-6417", \
+            "Body" => current_user + " has sent you a new seed with SeedBust. Check it out here http://seedbust.heroku.com/refer/" + plant_id})
+      @response.body
+      @response.code
   end
   
   def foursquare

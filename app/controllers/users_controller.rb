@@ -45,8 +45,8 @@ class UsersController < ApplicationController
       @response = ACCOUNT.request(\
           "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
           "POST", { \
-            "To" =>"5095526211", \
-            "From" =>"415-599-2671", \
+            "To" =>"415-760-8666", \
+            "From" =>"415 366-6417", \
             "Body" =>"George sent you a new seed with SeedBust."})
       @response.body
       @response.code
