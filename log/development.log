@@ -2410,3 +2410,1205 @@ ActionController::RoutingError (No route matches "/images/dave.png" with {:metho
   
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:24:57) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:25:40) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 19:25:48) [GET]
+
+ActionController::RoutingError (No route matches "/foursquare" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:29:18) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 19:29:28) [GET]
+
+ActionController::RoutingError (No route matches "/foursquare" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:29:53) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 44ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 19:29:55) [GET]
+
+ActionController::RoutingError (No route matches "/foursquare" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:30:06) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 19:30:09) [GET]
+
+ActionController::RoutingError (No route matches "/foursquare" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:34:33) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+ERROR: compiling _run_erb_app47views47users47home46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/users/home.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+..., :class => 'button', :style='margin-top:25px' ).to_s); @out...
+                              ^
+Function body:           def _run_erb_app47views47users47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "    <div id=\"logo\">\n"
+@output_buffer.concat "    SeedBust\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <div class=\"text\">\n"
+@output_buffer.concat "    SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.\n"
+@output_buffer.concat "    </div>    \n"
+@output_buffer.concat "    "; @output_buffer.concat(( link_to "Login With Foursquare", :action => :show, :class => 'button', :style='margin-top:25px' ).to_s); @output_buffer.concat " \n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/users/home.html.erb:12:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/users/home.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+..., :class => 'button', :style='margin-top:25px' ).to_s); @out...
+                              ^) on line #8 of app/views/users/home.html.erb:
+5:     <div class="text">
+6:     SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.
+7:     </div>    
+8:     <%= link_to "Login With Foursquare", :action => :show, :class => 'button', :style='margin-top:25px' %> 
+
+    app/views/users/home.html.erb:12:in `compile!'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:35:20) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 19:36:47) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x199da6c>) on line #8 of app/views/users/home.html.erb:
+5:     <div class="text">
+6:     SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.
+7:     </div>    
+8:     <%= link_to "Plant Seed", [:controller => :seeds, :action => :show], [:class => 'button', :style => 'margin-top:25px'] %>
+
+    app/views/users/home.html.erb:8
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 19:37:43) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+ERROR: compiling _run_erb_app47views47users47foursquare46html46erb RAISED compile error
+/Users/finnegankelly/SeedBust/app/views/users/foursquare.html.erb:8: syntax error, unexpected ')', expecting ']'
+..., :style => 'margin-top:25px') ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47users47foursquare46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n"
+@output_buffer.concat "    <div id=\"logo\">\n"
+@output_buffer.concat "    Foursquare Login\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <div class=\"text\">\n"
+@output_buffer.concat "    Dave does this\n"
+@output_buffer.concat "    </div>  \n"
+@output_buffer.concat "    "; @output_buffer.concat(( link_to ("Plant Seed", [:controller => :seeds, :action => :show, :class => 'button', :style => 'margin-top:25px') ).to_s); @output_buffer.concat "  "; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/finnegankelly/SeedBust/app/views/users/foursquare.html.erb:11:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/finnegankelly/SeedBust/app/views/users/foursquare.html.erb:8: syntax error, unexpected ')', expecting ']'
+..., :style => 'margin-top:25px') ).to_s); @output_buffer.conca...
+                              ^) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to ("Plant Seed", [:controller => :seeds, :action => :show, :class => 'button', :style => 'margin-top:25px') %>  
+
+    app/views/users/foursquare.html.erb:11:in `compile!'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 19:37:58) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x17957d8>) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to ("Plant Seed", [:controller => :seeds, :action => :show, :class => 'button', :style => 'margin-top:25px']) %>  
+
+    app/views/users/foursquare.html.erb:8
+
+Rendered rescues/_trace (95.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:25:00) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x19da110>) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to ("Plant Seed", [:controller => :seeds, :action => :show], [:class => 'button', :style => 'margin-top:25px']) %>  
+
+    app/views/users/foursquare.html.erb:8
+
+Rendered rescues/_trace (57.7ms)
+Rendered rescues/_request_and_response (29.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:25:19) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x5f7c60>) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to("Plant Seed", [:controller => :seeds, :action => :show], [:class => 'button', :style => 'margin-top:25px']) %>  
+
+    app/views/users/foursquare.html.erb:8
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:25:49) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1747e0c>) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to("Plant Seed", [:controller => :seeds, :action => :show]) %>  
+
+    app/views/users/foursquare.html.erb:8
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:25:59) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:26:06) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:26:22) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x178264c>) on line #8 of app/views/users/foursquare.html.erb:
+5:     <div class="text">
+6:     Dave does this
+7:     </div>  
+8:     <%= link_to("Plant Seed", [:controller => :seeds, :action => :show]) %>  
+
+    app/views/users/foursquare.html.erb:8
+
+Rendered rescues/_trace (88.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:26:32) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:26:45) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:26:50) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:26:55) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x172fa50>) on line #8 of app/views/users/home.html.erb:
+5:     <div class="text">
+6:     SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.
+7:     </div>    
+8:     <%= link_to "Plant Seed", [:controller => :seeds, :action => :show], [:class => 'button', :style => 'margin-top:25px'] %>
+
+    app/views/users/home.html.erb:8
+
+Rendered rescues/_trace (88.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:28:03) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:28:05) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:28:42) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:28:44) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:28:46) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:31:10) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:31:46) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:31:48) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:31:48) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:32:08) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+
+ActionController::RoutingError (No route matches "/seedbust/planted.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:33:59) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:34:07) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:35:23) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#done (for 127.0.0.1 at 2010-05-29 20:35:34) [GET]
+Rendering template within layouts/standard
+Rendering seeds/done
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/seeds/done]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#done (for 127.0.0.1 at 2010-05-29 20:38:02) [GET]
+Rendering template within layouts/standard
+Rendering seeds/done
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/done]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#send (for 127.0.0.1 at 2010-05-29 20:38:14) [GET]
+
+ActionController::UnknownAction (No action responded to send. Actions: done, plant, and show):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:39:05) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:39:10) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:39:13) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:39:23) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:39:23) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#done (for 127.0.0.1 at 2010-05-29 20:39:33) [GET]
+Rendering template within layouts/standard
+Rendering seeds/done
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/done]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:42:44) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:42:44) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plants (for 127.0.0.1 at 2010-05-29 20:42:54) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActionController::UnknownAction (No action responded to plants. Actions: done, plant, and show):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:43:03) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:43:03) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:43:06) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:45:00) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:47:33) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:50:17) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#facebook (for 127.0.0.1 at 2010-05-29 20:50:19) [GET]
+Rendering template within layouts/standard
+Rendering plants/facebook
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/facebook]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#facebook (for 127.0.0.1 at 2010-05-29 20:52:03) [GET]
+Rendering template within layouts/standard
+Rendering plants/facebook
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/facebook]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 20:52:08) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#index (for 127.0.0.1 at 2010-05-29 20:54:05) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: edit, facebook, gift, harvest, mine, share, show, and thanks):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 20:54:08) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 20:54:10) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 20:54:12) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 20:54:18) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 20:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:54:21) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:55:57) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:56:27) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:56:44) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 52ms (View: 50, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#facebook (for 127.0.0.1 at 2010-05-29 20:57:58) [GET]
+Rendering template within layouts/standard
+Rendering plants/facebook
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/facebook]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 20:59:22) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 20:59:23) [GET]
+  Parameters: {"conroller"=>"plants"}
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/show?conroller=plants]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#send (for 127.0.0.1 at 2010-05-29 20:59:35) [GET]
+
+ActionController::UnknownAction (No action responded to send. Actions: edit, facebook, gift, harvest, mine, share, show, and thanks):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 21:02:25) [GET]
+  Parameters: {"conroller"=>"plants"}
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/show?conroller=plants]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:02:29) [GET]
+
+ActionController::UnknownAction (No action responded to foursquare. Actions: edit, facebook, gift, harvest, mine, share, show, and thanks):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:02:47) [GET]
+
+ActionView::MissingTemplate (Missing template plants/foursquare.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:03:22) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:03:50) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:04:33) [GET]
+  Parameters: {"friend_ids"=>"3487634,"}
+
+ActionController::RoutingError (No route matches "/plants/done.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:08:55) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:08:57) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:08:58) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:08:58) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:09:11) [GET]
+  Parameters: {"friend_ids"=>"3487634,3487634,3487634,"}
+
+ActionController::RoutingError (No route matches "/plants/done.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:15:02) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:15:10) [GET]
+  Parameters: {"friend_ids"=>""}
+
+ActionController::RoutingError (No route matches "/plants/done.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:16:02) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:16:05) [GET]
+  Parameters: {"friend_ids"=>""}
+
+ActionController::RoutingError (No route matches "/plants/thanks.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:16:08) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:16:10) [GET]
+  Parameters: {"friend_ids"=>""}
+
+ActionController::RoutingError (No route matches "/plants/thanks.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:16:18) [GET]
+  Parameters: {"friend_ids"=>""}
+
+ActionController::RoutingError (No route matches "/plants/thanks.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#foursquare (for 127.0.0.1 at 2010-05-29 21:16:19) [GET]
+Rendering template within layouts/standard
+Rendering plants/foursquare
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 21:16:20) [GET]
+  Parameters: {"friend_ids"=>""}
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/plants/thanks?friend_ids=]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 21:16:32) [GET]
+  Parameters: {"friend_ids"=>""}
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/plants/thanks?friend_ids=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 21:17:14) [GET]
+  Parameters: {"friend_ids"=>""}
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/plants/thanks?friend_ids=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:17:16) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:17:27) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:17:28) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 45ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 21:17:41) [GET]
+  Parameters: {"friend_ids"=>""}
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/thanks?friend_ids=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 21:17:49) [GET]
+  Parameters: {"friend_ids"=>""}
+Rendering template within layouts/standard
+Rendering plants/thanks
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/plants/thanks?friend_ids=]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 21:17:51) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 21:17:52) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 21:17:57) [GET]
+Rendering template within layouts/standard
+Rendering seeds/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 21:18:05) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 21:18:05) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 21:18:09) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 43ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]

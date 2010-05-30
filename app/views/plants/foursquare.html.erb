@@ -1,0 +1,48 @@
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $('.friend').toggle(function(){
+        $(this).css('backgroundColor', '#ccc');
+        $(this).find('input').attr('checked', true);
+      }, function() {
+        $(this).css('backgroundColor', '#fff');
+        $(this).find('input').attr('checked', false);
+      });
+    });
+    
+    function submit() {
+      var friend_ids = '';
+      $('.friend').map(function() {
+        if ($(this).find('input').attr('checked')) {
+          friend_ids = friend_ids + $(this).find('input').attr('fsid')+ ',';
+        }
+      });
+      window.location = 'thanks?friend_ids='+friend_ids;
+    }
+  </script>
+  <title></title>
+  </head>
+  <body>
+    
+    <div class="title">
+    Choose friends to send seeds to
+    </div>
+    <div class="friends">
+      <div class="friend"><input fsid="3487634" id="share" type="checkbox"> Tom Jones</div>
+      <div class="friend"><input fsid="3487634" id="share" type="checkbox"> Tom Jones</div>
+      <div class="friend"><input fsid="3487634" id="share" type="checkbox"> Tom Jones</div>
+      <div class="friend"><input fsid="3487634" id="share" type="checkbox"> Tom Jones</div>
+    </div>
+    <div class="bottom">
+    <a onclick="submit()" style="display:inline-block;" href="#" style="margin-top:25px;"class="button">
+    Send Seeds to Friends
+    </a>
+
+      <a style="display:inline-block;background-color:#ccc;" href="thanks" style="margin-top:25px;"class="button">
+      Skip
+      </a>    
+    </div>
+
+<p><%= link_to "Friend Share", :action => :show %></p>
+

@@ -1,3 +1,47 @@
-<h1>Name Your Plant</h1>
-<p><input type="text" value="Ganja Tupak Wigwam"></p>
-<%= link_to "name it", :action => :facebook %>
+
+  <script>
+  function submit() {
+    if (document.getElementById('name').value) {
+      
+      if (document.getElementById('share').checked) {  
+        //take to share page
+        var url = 'http://m.facebook.com/connect/prompt_feed.php?api_key=3bf44bb266e9d29f92d71fb103955006&attachment={'+
+        '"name":"SeedBust",'+
+        '"caption":"I+just+planted+a+seed+named+'+ document.getElementById('name').value +'",'+
+        '"description":"Take+a+seed+and+plant+it+to+show+your+support.",'+
+        '"href":"http%3A%2F%2F174.143.153.39%2Fseedbust%2Findex.html",'+
+        '"media":[{"type":"image","src":"http%3A%2F%2Fimg363.imageshack.us%2Fimg363%2F9931%2F9122plantcartoonls8.jpg","href":"http%3A%2F%2F174.143.153.39%2Fseedbust%2Findex.html"}]}'+
+        '&preview=1'+
+        '&user_message_prompt=Tell+the+world+about+your+plant!'+
+        '&callback=http%3A%2F%2F174.143.153.39%2Fseedbust%2Fseeds.html%3Fname%3D'+ document.getElementById('name').value+
+        '&cancel=http%3A%2F%2F174.143.153.39%2Fseedbust%2Fseeds.html%3Fname%3D'+ document.getElementById('name').value+
+        '&action_links=[{%22text%22%3A%22Get+My+Seed%22%2C%22href%22%3A%22http%3A%2F%2F174.143.153.39%2Fseedbust%2Findex.html&display=wap&r70f6588d';
+        window.location = url;
+      
+      } else {
+        //take to seeds page
+        window.location = 'http://174.143.153.39/seedbust/seeds.html?name='+ document.getElementById('name').value;
+      }
+    } else {
+      alert('You need to enter a name!');
+    }
+  }
+  </script>
+    
+    <div class="title">
+    Name your plant:
+    </div>
+    <input id="name" type="text">
+    <div class="text">
+    This is the name that will be passed to future generations of this plant.
+    </div>    
+    <a href="#" onclick="submit()" style="margin-top:25px;" class="button">
+    Name It!
+    </a>
+  
+    <center style="padding-top:15px;" >
+      <input id="share" type="checkbox" checked='true'>Share with Friends
+    </center>
+  </body>
+</html>
+   <%= link_to "name it", :conroller => :plants, :action => :show %>

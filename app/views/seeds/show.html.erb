@@ -1,3 +1,32 @@
-<h1>Seeds</h1>
-<p>Your Seed is ready to plant</p>
+
+  
+  <script type="text/javascript">
+  function getPosition() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      error('not supported');
+    }
+  }
+  function success(position) {
+    window.location = "plant?lat="+position.coords.latitude+"&long="+position.coords.longitude;
+  }
+  function error(msg) {
+    alert("Sorry, we need your location, and we can't find it.");
+  }
+  </script>
+    
+    <div class="title">
+    Your seed is ready to plant!
+    </div>
+    <center>
+      <img style="height:200px;padding:25px;" src="http://etc.usf.edu/clipart/29700/29726/pumpkin_29726_lg.gif"/>
+    </center>
+    <a href="#" onclick="getPosition()" style=""class="button">
+    Next
+    </a>
+    
+    
+  </body>
+</html>
 <p><%= link_to "Plant!", :action => :plant %></p>
