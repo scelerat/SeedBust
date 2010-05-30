@@ -8,6 +8,8 @@ class SeedsController < ApplicationController
   end
 
   def plant
+    
+      
     @plant = Plant.new
     @plant.state = 'PLANTED'
     @plant.lat = params[:lat]
@@ -33,7 +35,8 @@ class SeedsController < ApplicationController
   end
   
   def plant_existing 
-    @plant = Plant.find(params[:plant_id])
+    @parent_plant = Plant.find(params[:plant_id])
+    
     
   end
 end

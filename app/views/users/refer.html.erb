@@ -1,3 +1,18 @@
+<script type="text/javascript">
+function getPosition() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    error('not supported');
+  }
+}
+function success(position) {
+  window.location = "/seeds/plant?lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&type_id=<%= @seed.id %>";
+}
+function error(msg) {
+  alert("Sorry, we need your location, and we can't find it.");
+}
+</script>
 
     <div id="logo">
     SeedBust
@@ -8,9 +23,12 @@
     from <%= @plant.planted_user.fb_first_name %>. 
     Now it's up to you to plant it and spread his seed far and wide.<br>
     </div>    
+
     
-    <%= link_to "Plant Seed", { :action     => :plant, 
+    <%= link_to "Plant Seed", { :controller => :seeds,
+                                :action     => :plant, 
                                 :id         => current_user.id, 
                                 :plant_id   => @plant.id}, 
                               { :class  => 'button', 
-                                :style  => 'margin-top:25px'} %>
+                                :style  => 'margin-top:25px',
+                                :onclick => 'getPosition()'} %>
