@@ -31,4 +31,8 @@ config.action_controller.perform_caching             = false
 # Enable threaded mode
 # config.threadsafe!
 
+FOURSQ_KEY = 'WPA3G50VB1FBIWDH5K2KTESTLWY0CNDAS3EO3Q50FIUSZGMM'
+FOURSQ_SECRET = 'JGT533D2VTTNG1ZEGWI0BBSKH0ITAAAANYMXNTPY44VRXX0K'
+
+
 SERVER = "seedbust.heroku.com/"
