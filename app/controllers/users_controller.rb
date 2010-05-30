@@ -12,7 +12,6 @@ class UsersController < ApplicationController
       end
       
       @user = current_user
-      session[:user] = @user
       session[:plant] = nil
       session[:debug] = nil
   end
@@ -30,7 +29,6 @@ class UsersController < ApplicationController
     else
      redirect "/"
     end
->>>>>>> bef3c322b161bc0bde05c94292742c6653accbbf
   end
 
   def facebook
