@@ -1,13 +1,15 @@
 
-    <div id="logo">
-    SeedBust
-    </div>
+   <div id="logo">
+   <img src="/images/logo.jpeg" style="width:225px;">
+   </div>
+   <div class="text">
+   SeedBust lets you plant virutal seeds in the <i>real world</i>. Name your plants, send seeds to friends, and watch them spread across the world.<br>
     
     <div class="text">
-    Looks like you got a special seed named "<%= @plant.name %>" from <%= @plant.planted_user.fb_first_name %>. Now it's up to you to plant it and spread their here seed far and wide.<br>
+    And... it looks like you got a special seed named "<%= @plant.name %>" from <%= @plant.planted_user.fb_first_name %>. Now it's up to you to plant it and spread their seed far and wide.<br>
     </div>    
     
-    <%= link_to "Plant Seed", { :action     => :plant, 
+    <%= link_to "Plant Seed", { :controller => :seeds, :action     => :plant, 
                                 :id         => current_user.id, 
                                 :plant_id   => @plant.id}, 
                               { :class  => 'button', 
