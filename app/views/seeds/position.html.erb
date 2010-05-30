@@ -1,0 +1,33 @@
+
+  
+  <script type="text/javascript">
+  function getPosition() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      error('not supported');
+    }
+  }
+  function success(position) {
+    window.location = "/seeds/plant?lat="+position.coords.latitude+"&lon="+position.coords.longitude;
+  }
+  function error(msg) {
+    alert("Sorry, we need your location, and we can't find it.");
+  }
+  </script>
+    
+    <div class="title">
+    Excellent Seed!!!
+    </div>
+    <div class="title">
+      <%= image_tag(@seed.image)%>
+    </div>
+    <br/>
+    <a href="#" onclick="getPosition()" style=""class="button">
+      Plant Seed
+    </a>
+    
+    
+  </body>
+</html>
+<p><%= link_to "Plant!", :action => :plant %></p>

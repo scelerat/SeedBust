@@ -4986,3 +4986,1524 @@ Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:04:32) [GET]
 Rendering template within layouts/standard
 Rendering plants/edit
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 22:09:07) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:09:08) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:09:09) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 111ms (View: 106, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:09:18) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant to css (for 127.0.0.1 at 2010-05-29 22:09:18) [GET]
+  Parameters: {"id"=>"main"}
+
+ActionView::MissingTemplate (Missing template seeds/plant.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:10:53) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (18.2ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 54ms (View: 31, DB: 19) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:10:58) [GET]
+  Parameters: {"id"=>"4"}
+Redirected to http://localhost:3000position
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 22:10:58) [GET]
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:11:55) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:11:55) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 8ms (View: 3, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:11:56) [GET]
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/seeds/position
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:11:56) [GET]
+Rendering template within layouts/standard
+Rendering seeds/position
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #25 of app/views/seeds/position.html.erb:
+22:     <center style="padding: 15px;">
+23:       <table><tr>
+24:         <% count = 0 %>
+25:       <% @seeds.each do |seed| %>
+26:         <% count = count + 1 %>
+27:         <td><%= link_to(image_tag(seed.image, :style => "border:0px"), {:action => :plant, :id => seed.id} ) %></td>
+28:         <% if count == 2 then %></tr><tr><% end %>
+
+    app/views/seeds/position.html.erb:25
+
+Rendered rescues/_trace (85.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:13:14) [GET]
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/seeds/position]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:15:29) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 11ms (View: 4, DB: 4) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:15:30) [GET]
+  Parameters: {"id"=>"3"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (80.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#seed_selected (for 127.0.0.1 at 2010-05-29 22:16:22) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/finnegankelly/SeedBust/app/controllers/seeds_controller.rb:18: syntax error, unexpected tASSOC, expecting '}'
+    redirect_to { :action => :position, :id => :params['id'] }
+                            ^):
+  
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:16:51) [GET]
+  Parameters: {"id"=>"3"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:17:58) [GET]
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/seeds/position
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:17:58) [GET]
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:14:in `position'
+
+Rendered rescues/_trace (32.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:18:01) [GET]
+  Parameters: {"id"=>"4"}
+Redirected to http://localhost:3000/seeds/position
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:18:01) [GET]
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:14:in `position'
+
+Rendered rescues/_trace (76.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:18:14) [GET]
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/seeds/position]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:18:56) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 9ms (View: 4, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:18:57) [GET]
+  Parameters: {"id"=>"3"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:19:00) [GET]
+  Parameters: {"id"=>"2"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (78.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:19:21) [GET]
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/seeds/position/params
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:19:21) [GET]
+  Parameters: {"id"=>"params"}
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/position/params]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:19:30) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 8ms (View: 3, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:19:31) [GET]
+  Parameters: {"id"=>"5"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:19:35) [GET]
+  Parameters: {"id"=>"4"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:20:15) [GET]
+  Parameters: {"id"=>"2"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (153.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:21:01) [GET]
+  Parameters: {"id"=>"2"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (33.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:21:03) [GET]
+  Parameters: {"id"=>"2"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:18:in `seed_selected'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:21:44) [GET]
+  [4;36;1mType Load (0.4ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 10ms (View: 4, DB: 3) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#seed_selected (for 127.0.0.1 at 2010-05-29 22:21:45) [GET]
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/seeds/position
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/seeds/seed_selected/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:21:45) [GET]
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/position]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:21:54) [GET]
+  Parameters: {"lat"=>"37.7823338", "long"=>"-122.3879883"}
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&long=-122.3879883]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:21:54) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 22:27:05) [GET]
+  [4;36;1mUser Columns (37.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 58ms (View: 4, DB: 37) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:27:10) [GET]
+Rendering template within layouts/standard
+Rendering users/foursquare
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/users/foursquare]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:27:58) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 54ms (View: 49, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#home (for 127.0.0.1 at 2010-05-29 22:28:10) [GET]
+
+SyntaxError (/Users/finnegankelly/SeedBust/app/controllers/users_controller.rb:23: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 22:28:16) [GET]
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 30ms (View: 1, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:28:18) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:28:18) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:29:21) [GET]
+  [4;35;1mType Load (0.3ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 56ms (View: 6, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:30:35) [GET]
+  Parameters: {"id"=>"3"}
+
+NoMethodError (undefined method `[]' for :params:Symbol):
+  app/controllers/seeds_controller.rb:14:in `position'
+
+Rendered rescues/_trace (30.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:32:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (34.5ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 91ms (View: 1, DB: 36) | 200 OK [http://localhost/seeds/position/3]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:32:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (1.5ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/seeds/position/3]
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:44:40) [GET]
+  Parameters: {"id"=>"plant", "lat"=>"37.7823338", "long"=>"-122.3879883"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = 'plant') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.image) on line #23 of app/views/seeds/position.html.erb:
+20:     Excellent Seed!!!
+21:     </div>
+22:     <div class="title">
+23:       <%= image_tag(@seed.image)%>
+24:     </div>
+25:     <br/>
+26:     <a href="#" onclick="getPosition()" style=""class="button">
+
+    app/views/seeds/position.html.erb:23
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:45:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (1.5ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 16ms (View: 5, DB: 3) | 200 OK [http://localhost/seeds/position/3]
+  [4;36;1mUser Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:46:01) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;35;1mPlant Columns (39.6ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 77ms (View: 4, DB: 42) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;35;1mSQL (2.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:46:01) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:46:04) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/plants/edit/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:46:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.0ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 12ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/3]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:46:53) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;36;1mPlant Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 19ms (View: 5, DB: 4) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:46:53) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:46:56) [GET]
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:47:40) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;36;1mPlant Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlant Create (165.0ms)[0m   [0mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:47:40', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:47:40')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 184ms (View: 2, DB: 169) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:47:40) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;35;1mPlant Columns (37.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Create (0.2ms)[0m   [0;1mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:47:40', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:47:40')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 53ms (View: 1, DB: 41) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:47:40) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:47:43) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:47:46) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;36;1mPlant Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlant Create (0.9ms)[0m   [0mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:47:46', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:47:46')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 17ms (View: 1, DB: 5) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:47:49) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/plants/edit/3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:51:53) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 22:51:55) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 8ms (View: 1, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 22:51:57) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 22:51:57) [GET]
+  [4;36;1mType Load (0.3ms)[0m   [0;1mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;35;1mType Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+Completed in 8ms (View: 3, DB: 2) | 200 OK [http://localhost/seeds/show]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 22:52:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mType Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+  [4;35;1mType Load (1.2ms)[0m   [0mSELECT * FROM `types` WHERE (`types`.`id` = '2') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 11ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/2]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:52:05) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;35;1mPlant Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Create (0.3ms)[0m   [0;1mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:52:05', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:52:05')[0m
+  [4;35;1mSQL (23.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 55ms (View: 1, DB: 31) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:52:05) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:52:08) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/plants/edit/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:52:53) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/edit/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:57:08) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/standard
+Rendering plants/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #36 of app/views/plants/edit.html.erb:
+33:     Name your plant:
+34:     </div>
+35:     
+36:     <% form_for(@type) do |f| %>
+37:       <%= f.text_field :name %>
+38:       <%= f.submit 'Update' %>
+39:     <% end %>
+
+    app/views/plants/edit.html.erb:36
+
+Rendered rescues/_trace (85.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:57:30) [GET]
+  Parameters: {"id"=>"4"}
+Rendering template within layouts/standard
+Rendering plants/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #36 of app/views/plants/edit.html.erb:
+33:     Name your plant:
+34:     </div>
+35:     
+36:     <% form_for(@plant) do |f| %>
+37:       <%= f.text_field :name %>
+38:       <%= f.submit 'Update' %>
+39:     <% end %>
+
+    app/views/plants/edit.html.erb:36
+
+Rendered rescues/_trace (81.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 22:58:16) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPlant Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mPlant Load (53.4ms)[0m   [0mSELECT * FROM `plants` WHERE (`plants`.`id` = '4') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined method `plant_path' for #<ActionView::Base:0x1a0f900>) on line #36 of app/views/plants/edit.html.erb:
+33:     Name your plant:
+34:     </div>
+35:     
+36:     <% form_for(@plant) do |f| %>
+37:       <%= f.text_field :name %>
+38:       <%= f.submit 'Update' %>
+39:     <% end %>
+
+    app/views/plants/edit.html.erb:36
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:59:52) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;35;1mPlant Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Create (0.3ms)[0m   [0;1mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:59:52', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:59:52')[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 33ms (View: 7, DB: 9) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 22:59:52) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;36;1mPlant Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlant Create (0.3ms)[0m   [0mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 05:59:52', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 05:59:52')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 18ms (View: 1, DB: 5) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 22:59:52) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#6 (for 127.0.0.1 at 2010-05-29 22:59:55) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActionController::UnknownAction (No action responded to 6. Actions: edit, foursquare, gift, harvest, mine, share, show, and thanks):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 23:01:04) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;35;1mPlant Columns (9.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Create (0.2ms)[0m   [0;1mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 06:01:04', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 06:01:04')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 35ms (View: 6, DB: 12) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 23:01:04) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:01:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPlant Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mPlant Load (0.7ms)[0m   [0mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined method `plant_path' for #<ActionView::Base:0x39c5b0>) on line #36 of app/views/plants/edit.html.erb:
+33:     Name your plant:
+34:     </div>
+35:     
+36:     <% form_for(@plant) do |f| %>
+37:       <%= f.text_field :name %>
+38:       <%= f.submit 'Update' %>
+39:     <% end %>
+
+    app/views/plants/edit.html.erb:36
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:01:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.9ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:02:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.1ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined method `fixnum_path' for #<ActionView::Base:0x571a0c>) on line #36 of app/views/plants/edit.html.erb:
+33:     Name your plant:
+34:     </div>
+35:     
+36:     <% form_for(@plant.id) do |f| %>
+37:       <%= f.text_field :name %>
+38:       <%= f.submit 'Update' %>
+39:     <% end %>
+
+    app/views/plants/edit.html.erb:36
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:05:38) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPlant Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mPlant Load (0.8ms)[0m   [0mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:06:50) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPlant Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mPlant Load (0.9ms)[0m   [0mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined method `submit' for #<ActionView::Base:0x5aabe0>) on line #38 of app/views/plants/edit.html.erb:
+35:     <%= @plant.id %>
+36:     <form name="update_name">
+37:       <input type="text" value="">
+38:       <%= submit 'Update' %>
+39:     
+40:     <div class="text">
+41:     This is the name that will be passed to future generations of this plant.
+
+    app/views/plants/edit.html.erb:38
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:07:17) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:07:39) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.8ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:08:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.8ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:08:28) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.0ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.6ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '7') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:14) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.6ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 11ms (View: 2, DB: 4) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:16) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.6ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 11ms (View: 2, DB: 4) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:16) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.6ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 11ms (View: 2, DB: 5) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:17) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.4ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 10ms (View: 2, DB: 4) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:18) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.1ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 9ms (View: 1, DB: 3) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:19) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 10ms (View: 2, DB: 2) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:19) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 10ms (View: 2, DB: 3) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:20) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (3.0ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 16ms (View: 2, DB: 5) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:21) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.4ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:27) [GET]
+  Parameters: {"id"=>"update_name"}
+  [4;35;1mPlant Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_name') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 8ms (View: 1, DB: 2) | 200 OK [http://localhost/plants/edit/update_name]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:09:46) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 10ms (View: 1, DB: 3) | 200 OK [http://localhost/plants/edit/update_names]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:10:49) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.8ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/plants/edit/update_names]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:10:51) [GET]
+
+ActionView::MissingTemplate (Missing template plants/update_name.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:11:03) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.1ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/update_names]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:11:07) [GET]
+
+ActionView::MissingTemplate (Missing template plants/update_name.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:26:27) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 40ms (View: 3, DB: 3) | 200 OK [http://localhost/plants/edit/update_names]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:26:33) [GET]
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (20.1ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name=):
+  app/controllers/plants_controller.rb:17:in `update_name'
+
+Rendered rescues/_trace (30.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:26:45) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.0ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 8ms (View: 1, DB: 3) | 200 OK [http://localhost/plants/edit/update_names]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:27:41) [GET]
+  Parameters: {"id"=>"update_names"}
+  [4;35;1mPlant Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.2ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = 'update_names') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #40 of app/views/plants/edit.html.erb:
+37:     </div>
+38:     <form name="update_name" action="/plants/update_name">
+39:       <input type="text" name = "name" value="">
+40:       <input hidden="id" value="<%= @plant.id %>">
+41:       <a href="#" onclick="document.update_name.submit()" style="margin-top:25px;" class="button">
+42:       Name It!
+43:       </a>
+
+    app/views/plants/edit.html.erb:40
+
+Rendered rescues/_trace (82.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:28:06) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 14ms (View: 1, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#foursquare (for 127.0.0.1 at 2010-05-29 23:28:07) [GET]
+Redirected to http://localhost:3000/seeds/show
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/foursquare]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#show (for 127.0.0.1 at 2010-05-29 23:28:07) [GET]
+  [4;35;1mType Load (0.4ms)[0m   [0mSELECT * FROM `types` ORDER BY id[0m
+Rendering template within layouts/standard
+Rendering seeds/show
+  [4;36;1mType Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `types`[0m
+Completed in 32ms (View: 5, DB: 3) | 200 OK [http://localhost/seeds/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#position (for 127.0.0.1 at 2010-05-29 23:28:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mType Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `types`[0m
+  [4;36;1mType Load (1.2ms)[0m   [0;1mSELECT * FROM `types` WHERE (`types`.`id` = '3') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering seeds/position
+Completed in 10ms (View: 2, DB: 3) | 200 OK [http://localhost/seeds/position/3]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SeedsController#plant (for 127.0.0.1 at 2010-05-29 23:28:14) [GET]
+  Parameters: {"lon"=>"-122.3879883", "lat"=>"37.7823338"}
+  [4;36;1mPlant Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPlant Create (1.2ms)[0m   [0mINSERT INTO `plants` (`name`, `lon`, `updated_at`, `date_planted`, `parent_plant_id`, `origin_user_id`, `planted_user_id`, `plant_id`, `lat`, `state`, `created_at`) VALUES(NULL, -122, '2010-05-30 06:28:14', NULL, NULL, 1, 1, NULL, 37, 'PLANTED', '2010-05-30 06:28:14')[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/standard
+Rendering seeds/plant
+Completed in 64ms (View: 2, DB: 51) | 200 OK [http://localhost/seeds/plant?lat=37.7823338&lon=-122.3879883]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-29 23:28:14) [GET]
+
+ActionController::RoutingError (No route matches "/seeds/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:28:17) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPlant Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.5ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 10ms (View: 1, DB: 4) | 200 OK [http://localhost/plants/edit/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:29:07) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPlant Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.2ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/plants/edit/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:29:21) [GET]
+  Parameters: {"name"=>"eggplant", "id"=>"8"}
+  [4;35;1mPlant Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.4ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Update (18.2ms)[0m   [0;1mUPDATE `plants` SET `updated_at` = '2010-05-30 06:29:21', `name` = 'eggplant' WHERE `id` = 8[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (23.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `var' for #<PlantsController:0x174aabc>):
+  app/controllers/plants_controller.rb:31:in `update_name'
+
+Rendered rescues/_trace (72.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:30:42) [GET]
+  Parameters: {"name"=>"eggplant", "id"=>"8"}
+  [4;35;1mPlant Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (1.0ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `show_url' for #<PlantsController:0x1a00018>):
+  app/controllers/plants_controller.rb:35:in `update_name'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:31:06) [GET]
+  Parameters: {"name"=>"eggplant", "id"=>"8"}
+  [4;36;1mPlant Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `plants`[0m
+  [4;35;1mPlant Load (1.3ms)[0m   [0mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000show
+Completed in 10ms (DB: 4) | 302 Found [http://localhost/plants/update_name?name=eggplant&id=8]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#home (for 127.0.0.1 at 2010-05-29 23:31:06) [GET]
+  [4;36;1mUser Columns (175.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/standard
+Rendering users/home
+Completed in 183ms (View: 2, DB: 175) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:31:31) [GET]
+  Parameters: {"name"=>"eggplant", "id"=>"8"}
+  [4;35;1mPlant Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.3ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/plants/show
+Completed in 9ms (DB: 3) | 302 Found [http://localhost/plants/update_name?name=eggplant&id=8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:31:31) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:33:12) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#edit (for 127.0.0.1 at 2010-05-29 23:33:13) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPlant Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.9ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+Rendering template within layouts/standard
+Rendering plants/edit
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/plants/edit/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#update_name (for 127.0.0.1 at 2010-05-29 23:33:16) [GET]
+  Parameters: {"name"=>"", "share"=>"on", "id"=>"8"}
+  [4;35;1mPlant Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mPlant Load (0.6ms)[0m   [0;1mSELECT * FROM `plants` WHERE (`plants`.`id` = '8') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mPlant Update (0.3ms)[0m   [0;1mUPDATE `plants` SET `updated_at` = '2010-05-30 06:33:16', `name` = '' WHERE `id` = 8[0m
+  [4;35;1mSQL (26.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://m.facebook.com/connect/prompt_feed.php?api_key=3bf44bb266e9d29f92d71fb103955006&attachment={"name":"SeedBust","caption":"I+just+planted+a+seed+named+","description":"Take+a+seed+and+plant+it+to+show+your+support.","href":"http%3A%2F%2Flocalhost:3000/""media":[{"type":"image","src":"http%3A%2F%2Fimg363.imageshack.us%2Fimg363%2F9931%2F9122plantcartoonls8.jpg","href":"http%3A%2F%2Flocalhost:3000/"}]}&preview=1&user_message_prompt=Tell+the+world+about+your+plant!&callback=http%3A%2F%2Flocalhost:3000/plants/show&cancel=http%3A%2F%2Flocalhost:3000/plants/show&action_links=[{%22text%22%3A%22Get+My+Seed%22%2C%22href%22%3A%22http%3A%2F%2F174.143.153.39%2Fseedbust%2Findex.html&display=wap&r70f6588d
+Completed in 42ms (DB: 33) | 302 Found [http://localhost/plants/update_name?name=&id=8&share=on]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PlantsController#show (for 127.0.0.1 at 2010-05-29 23:33:38) [GET]
+Rendering template within layouts/standard
+Rendering plants/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/show]

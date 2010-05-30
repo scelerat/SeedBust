@@ -3,6 +3,7 @@
     SeedBust
     </div>
     <div class="text">
-    SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.
+    SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.<br>
+    Welcome <%= session[:user].fb_first_name %>
     </div>    
     <%= link_to "Plant Seed", {:action => :foursquare}, {:class => 'button', :style => 'margin-top:25px'} %>
