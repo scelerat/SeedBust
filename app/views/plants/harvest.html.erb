@@ -9,9 +9,11 @@
     <% @nearby_plants.each do |nearby_plant| %>
      <% usr = User.find_by_id(nearby_plant["origin_user_id"]) %>
       <% if usr %>
+      <% if nearby_plant.name %>
        <tr class="leader">
          <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") if usr.photo %></td>
          <td class="leader-name"><a href="http://seedbust.heroku.com/refer/<%= nearby_plant.id %>"><%= nearby_plant.name %></a></td>
+      <% end %>
       <% end %>
      <% end %>
     </table>
