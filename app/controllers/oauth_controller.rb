@@ -3,10 +3,24 @@ class OauthController < ApplicationController
     # redirect_to client.web_server.authorize_url(
     #   :redirect_uri => oauth_callback_url
     # )
-    @request_token =  client.get_request_token
+    
+    oauth = Foursquare::OAuth.new(FOURSQ_KEY, FOURSQ_SECRET)
+
+    request_token = oauth.request_token.token
+    request_secret = oauth.request_token.secret
+    
+    @request_token = oauth.request_token.token
+    @request_secret = oauth.request_token.secret
+    
+    logger.debug "request_token: #{@request_token}"
+    logger.debug "request_secret: #{@request_secret}"
+    
+    # this is from the 
+    # @request_token =  client.get_request_token
+    session[:oauth] = oauth
     session[:request_token] = @request_token
-    logger.debug @request_token.authorize_url
-    redirect_to @request_token.authorize_url
+    session[:request_secret] = @request_secret
+    redirect_to oauth.request_token.authorize_url
   end
 
   def callback
@@ -35,12 +49,34 @@ class OauthController < ApplicationController
     #   user.save
     # end
     
-    @request_token = session[:request_token]
-    @access_token = @request_token.get_access_token
-    @photos = @access_token.get('/photos.xml')
+    logger.debug "session[:request_token]: #{session[:request_token]}"
+    logger.debug "session[:request_secret]: #{session[:request_secret]}"
+    logger.debug "params[:oauth_token]: #{params[:oauth_token]}"
+    
+    oauth = session[:oauth]
+    begin
+      @access_token, @access_secret = oauth.authorize_from_request(
+                                      oauth.request_token.token, 
+                                      oauth.request_token.secret, 
+                                      params[:oauth_token])
+    rescue OAuth::Unauthorized
+      logger.debug "access_token: #{@access_token}"
+      logger.debug "access_secret: #{@access_secret}"
+      logger.debug "oauth_token: #{@oauth_token}"
+      redirect_to :action => :denied
+      return
+    end
+    
+    oauth.authorize_from_access(@access_token, @access_secret)
+    foursquare = Foursquare::Base.new(oauth)
+    
+    # find the user from the foursquare data
+    
+    
     
     session[:user] = 'foo'
     session[:access_token] = @access_token
+    session[:foursquare] = foursquare
     
     redirect_to :controller => :users, :action => :home
     # render :json => user_json
@@ -49,11 +85,20 @@ class OauthController < ApplicationController
   protected
 
   def client
+    require 'rubygems'
     require 'oauth'
-    @client=OAuth::Consumer.new( FOURSQ_KEY, FOURSQ_SECRET, {
-          :site => 'http://foursquare.com',
-          :path => '/oauth/authorize'
-        })
+    require 'foursquare'
+    
+    # FOURSQUARE gem / API
+    @oauth = Foursquare::OAuth.new(FOURSQ_KEY, FOURSQ_SECRET)
+    
+    # OAUTH: naive Foursquare
+    # @client=OAuth::Consumer.new( FOURSQ_KEY, FOURSQ_SECRET, {
+    #       :site => 'http://foursquare.com',
+    #       :path => '/oauth/authorize'
+    #     })
+    
+    # OAUTH2: Facebook
     #@client ||= OAuth2::Client.new(
     #  FOURSQ_KEY, FOURSQ_SECRET, :site => 'http://foursquare.com/oauth/authorize'
     #)

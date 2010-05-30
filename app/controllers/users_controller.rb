@@ -27,8 +27,10 @@ class UsersController < ApplicationController
   end
   
   def logout
+    session[:oauth] = nil
     session[:user] = nil
     session[:access_token] = nil
+    session[:foursquare] = nil
     redirect_to :action => :home
   end
   # render new.rhtml
