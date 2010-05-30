@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fb_id: 1
+  fb_first_name: MyString
+  fb_last_name: MyString
+  fb_link: MyString
+  fb_last_lat: 1
+  fb_last_lon: 1
+  role: MyString
+
+two:
+  fb_id: 1
+  fb_first_name: MyString
+  fb_last_name: MyString
+  fb_link: MyString
+  fb_last_lat: 1
+  fb_last_lon: 1
+  role: MyString

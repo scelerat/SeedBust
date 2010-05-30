@@ -927,3 +927,42 @@ Processing PlantsController#thanks (for 127.0.0.1 at 2010-05-29 16:35:21) [GET]
 Rendering template within layouts/standard
 Rendering plants/thanks
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/plants/thanks]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (793.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (464.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (20.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100530004408)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100530004408)
+  [4;36;1mSQL (166.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fb_id` int(11), `fb_first_name` varchar(255), `fb_last_name` varchar(255), `fb_link` varchar(255), `fb_last_lat` int(11), `fb_last_lon` int(11), `role` varchar(255) DEFAULT 'active', `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (35.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530004408')[0m
+Migrating to CreatePlants (20100530005033)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100530004408)
+Migrating to CreatePlants (20100530005033)
+  [4;36;1mSQL (121.4ms)[0m   [0;1mCREATE TABLE `plants` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `parent_plant_id` int(11), `planted_user_id` int(11), `origin_user_id` int(11), `name` varchar(255), `state` varchar(255), `plant_id` int(11), `date_planted` date, `lat` int(11) DEFAULT 0, `lon` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530005033')[0m
+Migrating to CreateSpecies (20100530005208)
+  [4;36;1mSQL (256.2ms)[0m   [0;1mCREATE TABLE `species` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` varchar(255) DEFAULT 'default.png', `growth_factor` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530005208')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (162.4ms)[0m   [0mSHOW FIELDS FROM `plants`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `plants`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `plants`[0m
+  [4;36;1mSQL (21.1ms)[0m   [0;1mSHOW FIELDS FROM `species`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `species`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `species`[0m
+  [4;35;1mSQL (14.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `users`[0m
