@@ -1,0 +1,8 @@
+
+    <div id="logo">
+    SeedBust
+    </div>
+    <div class="text">
+    Looks like you got a special seed named "<%= @plant.name %>" from <%= @plant.planted_user.fb_first_name %>. Now it's up to you to plant it and spread his seed far and wide.<br>
+    </div>    
+    <%= link_to "Plant Seed", {:action => :foursquare, :id => session[:user].id}, {:class => 'button', :style => 'margin-top:25px'} %>

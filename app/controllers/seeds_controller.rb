@@ -1,5 +1,7 @@
 class SeedsController < ApplicationController
   def show
+    # if already has plant then send it to the position finder
+    if session[:plant] then redirect_to :action => :position, :id => session[:plant].type_id end
     @seeds = Type.find(:all, :order => :id)
   end
 
@@ -8,8 +10,14 @@ class SeedsController < ApplicationController
     @plant.state = 'PLANTED'
     @plant.lat = params[:lat]
     @plant.lon = params[:lon]
-    @plant.origin_user_id = session[:user]
-    @plant.planted_user_id = session[:user]
+    @plant.type_id = params[:type_id]
+    if session[:plant] then 
+       @plant.origin_user_id = session[:plant].origin_user_id
+       @plant.parent_plant_id = session[:plant].id
+    else
+       @plant.origin_user_id = session[:user].id
+    end
+    @plant.planted_user_id = session[:user].id
     @plant.save
   end
 
