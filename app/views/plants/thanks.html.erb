@@ -8,7 +8,7 @@
       }
     }
     function success(position) {
-      window.location = "/plant/harvest?lat="+position.coords.latitude+"&lon="+position.coords.longitude;
+      window.location = "/plants/harvest?lat="+position.coords.latitude+"&lon="+position.coords.longitude;
     }
     function error(msg) {
       alert("Sorry, we need your location, and we can't find it.");
@@ -34,7 +34,7 @@
      <% usr = User.find_by_id(leader["origin_user_id"]) %>
       <% if usr %>
        <tr class="leader">
-         <td class="leader-image"><%= image_tag(usr.photo, :style => "width:30px;margin-right:10px") if usr.photo %></td>
+         <td class="leader-image"><%# image_tag(usr.photo, :style => "width:30px;margin-right:10px") if usr.photo %></td>
          <td class="leader-name"><%= usr.fb_first_name %> <%= usr.fb_last_name %></td>
           <td class="leader-count"><%#= Plant.count(:all, :conditions => 'origin_user_id = #{leader["origin_user_id"]}')%></td>
       <% end %>
