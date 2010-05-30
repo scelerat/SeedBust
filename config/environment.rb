@@ -43,6 +43,7 @@ Rails::Initializer.run do |config|
   
   # Authenticated user additions
   config.active_record.observers = :user_observer
+  config.action_controller.session_store = :active_record_store 
   require 'lib/twiliolib.rb'
   
     API_VERSION = '2008-08-01'
