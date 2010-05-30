@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       @user = User.new()
       @user.fb_first_name = "Frank"
       @user.fb_last_name = "Williams"
+      @user.save
       session[:user] = @user
   end
 
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
   
   def foursquare
     if session[:user] 
-      redirect_to "/seeds/show"
+      redirect_to "/seeds/show/1"
     end
   end
 

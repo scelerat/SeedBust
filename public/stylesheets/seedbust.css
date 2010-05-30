@@ -1,6 +1,6 @@
 body{font-family:verdana;padding:0px;margin:0px;}
 #logo{padding:25px 0px; font-size:36px; text-align:center;}
-.text{text-align:center;}
+.text{text-align:center;padding-top:20px;}
 .title{font-size:1.2em;text-align:center;background-color:#777;color:#fff; padding:10px 0px;border-bottom:1px solid #000;}
 .button{margin:0px 10px; display:block;-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);padding:10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);-moz-border-radius: 5px 5px;-webkit-border-radius: 5px 5px;border: 1px solid #6D6E71;background-color: skyblue;color: #444444;text-decoration:none;font-weight: bold;text-align:center;text-shadow: 0 1px 1px #fff;}
 #countdown{font-size:40px; text-align:center;padding:40px;}

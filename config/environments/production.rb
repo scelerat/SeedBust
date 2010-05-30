@@ -30,3 +30,5 @@ config.action_controller.perform_caching             = false
 
 # Enable threaded mode
 # config.threadsafe!
+
+SERVER = "seedbust.heroku.com/"
