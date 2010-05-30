@@ -1,11 +1,12 @@
     <div class="title">
     Nearby Plants: Grab a Seed
     </div>
-
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
     <center>
     <table class="leaderboard">  
-    <% nearby_plants = Plant.nearby_plants 
-     nearby_plants.each do |nearby_plant| %>
+    <% @nearby_plants.each do |nearby_plant| %>
      <% usr = User.find_by_id(nearby_plant["origin_user_id"]) %>
       <% if usr %>
        <tr class="leader">
