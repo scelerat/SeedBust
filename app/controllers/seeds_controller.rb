@@ -15,9 +15,9 @@ class SeedsController < ApplicationController
        @plant.origin_user_id = session[:plant].origin_user_id
        @plant.parent_plant_id = session[:plant].id
     else
-       @plant.origin_user_id = session[:user].id
+       @plant.origin_user_id = current_user.id
     end
-    @plant.planted_user_id = session[:user].id
+    @plant.planted_user_id = current_user.id
     @plant.save
   end
 
