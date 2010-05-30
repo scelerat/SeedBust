@@ -90,10 +90,12 @@ class OauthController < ApplicationController
     session[:userdata] = foursquare.user
     session[:access_token] = @access_token
     session[:access_secret] = @access_secret
-    #logger.debug foursquare.user["photo"]
-    #logger.debug foursquare.user["firstname"]  
     
-    redirect_to :controller => :users, :action => :home
+    if session[:return_to] then
+      redirect_to session[:return_to]
+    else
+      redirect_to :controller => :users, :action => :home
+    end
     # render :json => user_json
   end
 

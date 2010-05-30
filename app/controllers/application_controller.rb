@@ -13,6 +13,38 @@ class ApplicationController < ActionController::Base
   def access_token
     session[:access_token]
   end
+  
+  def logged_in?
+    !!current_user
+  end
+  
+  def login_required
+    authorized? || access_denied
+  end
+  
+  def authorized?(action = action_name, resource = nil)
+    logged_in?
+  end
+  
+  def access_denied
+    respond_to do |format|
+      format.html do
+        store_location
+        redirect_to "/oauth/start"
+      end
+      # format.any doesn't work in rails version < http://dev.rubyonrails.org/changeset/8987
+      # Add any other API formats here.  (Some browsers, notably IE6, send Accept: */* and trigger 
+      # the 'format.any' block incorrectly. See http://bit.ly/ie6_borken or http://bit.ly/ie6_borken2
+      # for a workaround.)
+      format.any(:json, :xml) do
+        request_http_basic_authentication 'Web Password'
+      end
+    end
+  end
+  
+  def store_location
+    session[:return_to] = request.request_uri
+  end
   helper_method :current_user
   helper_method :access_token
   # Include standard authentication routines.

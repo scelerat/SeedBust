@@ -1,6 +1,8 @@
 class SeedsController < ApplicationController
+  before_filter :login_required
   def show
     # if already has plant then send it to the position finder
+      
     if session[:plant] then redirect_to :action => :position, :id => session[:plant].type_id end
     @seeds = Type.find(:all, :order => :id)
   end
@@ -30,4 +32,8 @@ class SeedsController < ApplicationController
     @seed = Type.find_by_id(params[:id])
   end
   
+  def plant_existing 
+    @plant = Plant.find(params[:plant_id])
+    
+  end
 end

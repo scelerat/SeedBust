@@ -4,6 +4,16 @@
     </div>
     <div class="text">
     SeedBust lets you plant seeds around the world. You can name them things and send them to friends to plant.<br>
+    <% if current_user and session[:userdata] then %>
+      <%# ugly ugly! %>
+      <% cur_id = current_user.id %>
     Welcome <%= session[:userdata]['firstname'] %><br/><%= image_tag(session[:userdata]['photo'], :options => {:width=>'50'}) %>
-    </div>    
-    <%= link_to "Plant Seed", {:action => :foursquare, :id => current_user.id}, {:class => 'button', :style => 'margin-top:25px'} %>
+    <% else %>
+      <% cur_id = nil%>
+    <% end %>
+    </div>
+    <%= link_to "Plant Seed", { :controller => :seeds,
+                                :action   => :show, 
+                                :id       => cur_id }, 
+                              { :class => 'button', 
+                                :style => 'margin-top:25px'} %>
