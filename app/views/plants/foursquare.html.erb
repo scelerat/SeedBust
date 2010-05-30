@@ -18,7 +18,7 @@
           friend_ids = friend_ids + $(this).attr('fsid')+ ',';
         }
       });
-      window.location = 'thanks?friend_ids='+friend_ids;
+      window.location = 'share?plant_id=2&friend_phones='+friend_ids;
     }
   </script>
   <title></title>
@@ -30,7 +30,7 @@
     </div>
     <form action="/plants/foursqaure">
       <% @friends.each do |friend| %>
-      <div fsid="<%= friend["id"] %>" class="friend"><%= friend["firstname"] %> <%= friend["lastname"] %></div>
+      <div fsid="<%= friend["phone"] %>" class="friend"><%= friend["firstname"] %> <%= friend["lastname"] %></div>
       <% end %>
     </div>
     <div class="bottom">

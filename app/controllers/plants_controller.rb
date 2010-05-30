@@ -37,17 +37,21 @@ class PlantsController < ApplicationController
     end 
   end
   
-  def share(fs_users, plant_id)
-    fs_users.each do |u|
+  def share
+    friend_phones = params[:friend_phones].split(',')
+    plant_id = params[:plant_id]
+    friend_phones.each do |phone_number|
       @response = ACCOUNT.request(\
           "/2008-08-01/Accounts/ACd68795defff7cfda994cfd09d6895fed/SMS/Messages", \
           "POST", { \
-            "To" => u.phone, \
+            "To" => phone_number, \
             "From" =>"415 366-6417", \
-            "Body" => current_user + " has sent you a new seed with SeedBust. Check it out here http://seedbust.heroku.com/refer/" + plant_id})
+            "Body" => "Your friend has sent you a new seed with SeedBust. Check it out here http://seedbust.heroku.com/refer/" + plant_id})
       @response.body
       @response.code
     end
+    
+    redirect_to :action => :thanks
   end
   
   def foursquare
@@ -63,6 +67,7 @@ class PlantsController < ApplicationController
     logger.debug oauth
     logger.debug foursquare.friends
     @friends = foursquare.friends
+    
   end
 
   def gift
