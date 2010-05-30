@@ -1,12 +1,18 @@
-body{font-family:verdana;padding:0px;}
+body{font-family:verdana;padding:0px;margin:0px;}
 #logo{padding:25px 0px; font-size:36px; text-align:center;}
 .text{text-align:center;}
-.title{font-size:1.2em;text-align:center;}
-.button{display:block;-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);padding:10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);-moz-border-radius: 5px 5px;-webkit-border-radius: 5px 5px;border: 1px solid #6D6E71;background-color: skyblue;color: #444444;text-decoration:none;font-weight: bold;text-align:center;text-shadow: 0 1px 1px #fff;}
+.title{font-size:1.2em;text-align:center;background-color:#777;color:#fff; padding:10px 0px;border-bottom:1px solid #000;}
+.button{margin:0px 10px; display:block;-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);padding:10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);-moz-border-radius: 5px 5px;-webkit-border-radius: 5px 5px;border: 1px solid #6D6E71;background-color: skyblue;color: #444444;text-decoration:none;font-weight: bold;text-align:center;text-shadow: 0 1px 1px #fff;}
 #countdown{font-size:40px; text-align:center;padding:40px;}
-input[type=text]{width:100%; line-height:30px; font-size:24px; margin:20px 0px;}
+input[type=text]{display:block; width:90%; line-height:30px; font-size:24px; margin:20px 0px;}
 input[type=checkbox]{margin:5px;}
-.friends{overflow-y:scroll;}
 .friend{padding:10px; border-bottom:1px solid #ccc;}
 .selected{background-color:#ccc;}
-.bottom{position:absolute;left:0px;bottom:0px;width:100%;text-align:center;background-color:#ccc; border-top: 1px solid #777; padding:10px 0px;}
+.bottom{text-align:center;background-color:#ccc; border-top: 1px solid #777; padding:10px 0px}
+
+.leaderboard{border:2px solid #ccc;margin:10px;}
+  .leader{ padding:4px;}
+  .leaderboard img{width:50px;}
+  .leader-image{vertical-align:middle;}
+  .leader-name{font-weight:bold;font-size: 1.2em;padding:0px 10px;}
+  .leader-count{}

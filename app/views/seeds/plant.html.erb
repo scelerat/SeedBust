@@ -11,7 +11,7 @@
   var newCount = currentCount - 1;
   document.getElementById('countdown').innerHTML = newCount;
   if (newCount == 0) {
-    window.location = "/plants/edit";
+    window.location = "/plants/edit/<%= @plant.id %>";
   }
 },  1000 );
   </script>
@@ -20,6 +20,7 @@
     
     <div class="title">
     Your seed has been planted and is growing into a tree!
+    Plant_ID <%= @plant.id %>
     </div>
     <div id="countdown">
       3
