@@ -6,7 +6,7 @@ body{font-family:verdana;padding:0px;}
 #countdown{font-size:40px; text-align:center;padding:40px;}
 input[type=text]{width:100%; line-height:30px; font-size:24px; margin:20px 0px;}
 input[type=checkbox]{margin:5px;}
-
+.friends{overflow-y:scroll;}
 .friend{padding:10px; border-bottom:1px solid #ccc;}
-
+.selected{background-color:#ccc;}
 .bottom{position:absolute;left:0px;bottom:0px;width:100%;text-align:center;background-color:#ccc; border-top: 1px solid #777; padding:10px 0px;}
