@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @plant = Plant.find_by_id(params[:id])
     if not @plant then
       logger.debug "Somebody tried to get a plant that doesn't exist. id: #{params[:id]}"
-      redirect "/"
+      redirect_to "/"
     end
     session[:plant] = @plant
   end
