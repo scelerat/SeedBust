@@ -1,3 +1,21 @@
+  
+    <script type="text/javascript">
+    function getPosition() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+      } else {
+        error('not supported');
+      }
+    }
+    function success(position) {
+      window.location = "/plant/harvest?lat="+position.coords.latitude+"&lon="+position.coords.longitude;
+    }
+    function error(msg) {
+      alert("Sorry, we need your location, and we can't find it.");
+    }
+    </script>
+
+
     <div class="title">
     Thanks
     </div>
@@ -22,6 +40,13 @@
       <% end %>
      <% end %>
     </table>
+    <center>
+      <div style="font-weight:bold; padding:10px 0px 10px 0px;" class="text">
+        <a href="#" onclick="getPosition()" style=""class="button">
+          Find Nearby Plants
+        </a>
+      </div>  
+    </center>
     <%= link_to("Plant your own seed!", "/seeds/show/")%>
     
     </center>

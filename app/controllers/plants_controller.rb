@@ -5,6 +5,9 @@ class PlantsController < ApplicationController
   end
 
   def harvest
+    lat = params[:lat]
+    lon = params[:lon]
+    @nearby_plants = Plant.find_by_sql("SELECT * FROM Plants WHERE lat > "+(lat-0.08)+ "AND lat < "+(lat+0.08)+ "AND lon > "+(lon-0.08)+ "AND lon < "+(lon+0.08))
   end
 
   def mine
